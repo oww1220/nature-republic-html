@@ -1,0 +1,15 @@
+.header-bn {
+    background-color: #dbf9f1;
+}
+.header-cont {
+    @include Background($sprite:'header-top-bg', $type:'jpg', $position:center bottom, $path:'bg');
+    background-repeat: repeat-x;
+}
+
+.footer-top {
+    border-top:1px solid #eaeaea;
+}
+.footer-cont {
+    @include Background($sprite:'footer-top-bg', $type:'jpg', $position:center top, $path:'bg');
+    background-repeat: repeat-x;
+}

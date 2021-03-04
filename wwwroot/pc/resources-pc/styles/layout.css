@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/*인라인 가로스크롤*/
+/*폰트만 삭제시킴*/
+/*투명도 믹스인*/
+/*포지션 믹스인*/
+/*백그라운드 믹스인*/
+/* 말줄임표 */
+/*에디터스타일*/
+/*미디어쿼리 믹스인*/
+.header-bn {
+	background-color: #dbf9f1;
+}
+
+.header-cont {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-pc/images/bg/header-top-bg.jpg");
+	background-position: center bottom;
+	-webkit-background-size: auto auto;
+	   -moz-background-size: auto;
+	        background-size: auto;
+	background-repeat: repeat-x;
+}
+
+.footer-top {
+	border-top: 1px solid #eaeaea;
+}
+
+.footer-cont {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-pc/images/bg/footer-top-bg.jpg");
+	background-position: center top;
+	-webkit-background-size: auto auto;
+	   -moz-background-size: auto;
+	        background-size: auto;
+	background-repeat: repeat-x;
+}
+
+/*# sourceMappingURL=../maps/layout.css.map */
