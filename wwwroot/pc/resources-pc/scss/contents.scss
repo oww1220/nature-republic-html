@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+@import "./_common.scss";
+
+@import "./contents/_main.scss";
+
+.inner {
+    width: 1080px;
+    margin: 0 auto;
+    position: relative;
+}

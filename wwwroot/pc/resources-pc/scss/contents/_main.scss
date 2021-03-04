@@ -1,0 +1,897 @@
+.main-wrap {
+    min-width: 1080px;
+    .main-section {
+        > div {
+            &:nth-child(odd) {
+                background-color: #fff;
+                .mainTypeB.section-cont .swiper-wrapper .swiper-slide a .cover,
+                .maincard08 .section-cont .swiper-wrapper .swiper-slide a .cover,
+                .maincard10 .section-cont .unit-list .unit-review .img {
+                    background-color: #EFF2F7;
+                }
+            }
+            &:nth-child(even) {
+                background-color: #EFF2F7;
+                .mainTypeB.section-cont .swiper-wrapper .swiper-slide a .cover,
+                .maincard08 .section-cont .swiper-wrapper .swiper-slide a .cover,
+                .maincard10 .section-cont .unit-list .unit-review .img {
+                    background-color: #fff;
+                }
+            }
+        }
+        .section-card {
+            padding:50px 0;
+            &.bannerOnly {
+                padding:30px 0;
+            }
+            h2 {
+                @include Bold;
+                font-size:40px;
+            }
+            .section-tit {
+                @include Align-between-bottom;
+                padding-bottom:30px;
+                > a {
+                    flex: none;
+                    b {
+                        @include Align-middle-left;
+                        @include Bold;
+                    }
+                }
+                .tit-cont {
+                    //@include Align-middle-left;
+                    span {
+                        display: block;
+                        color:#999;
+                        font-size:16px;
+                        margin-top:8px;
+                        //margin-left:10px;
+                    }
+                    b {
+                        margin-top:20px;
+                    }
+                }
+                ~ .section-banner {
+                    margin-top: 30px;
+                }
+            }
+            .section-cont {
+                ~ .section-banner {
+                    margin-top: 30px;
+                }
+            }
+            .section-img-tit {
+                padding-bottom: 30px;
+            }
+            .section-banner {
+                //margin-top:30px;
+                a {
+                    display: block;
+                }
+                // .section-banner-txt {
+                //     @include Align-between;
+                //     position: relative;
+                //     margin:0 auto;
+                //     width:60%;
+                //     height:100%;
+                //     strong {
+                //         text-align:left;
+                //         line-height: 1.5;
+                //         font-size:14px;
+                //         color:rgba(255, 255, 255, 0.6);
+                //         @include Bold;
+                //         span {
+                //             color:rgba(255, 255, 255, 1);
+                //             display: block;
+                //             font-size:20px;
+                //         }
+                //     }
+                //     &::after {
+                //         content:'';
+                //         @include Background($sprite:'timedeal-bg', $type:'png', $position:right center, $path:'bgs');
+                //         @include Position($bottom: 0, $right: 0);
+                //         width:563px;
+                //         height:120px;
+                //     }
+                // }
+            }
+            .swiper-button-next {
+                right:-5%;
+            }
+            .swiper-button-prev {
+                left:-5%;
+            }
+            &.maincard01 {
+                position: relative;
+                padding:50px 0 20px;
+                .view-slide {
+                    position: relative;
+                    .main-visual-list {
+                        li.event {
+                            display: inline-block;
+                            width:1080px;
+                            margin:0 50px;
+                            a {
+                                .img {
+                                    position: relative;
+                                    .cover {
+                                        overflow: hidden;
+                                        border-radius: 40px;
+                                    }
+                                    .flag-bottom-wrap {
+                                        left : 60px; 
+                                        bottom:-15px;
+                                    }
+                                    img {
+                                        width: 100%;
+                                    }
+                                    .text {
+                                        @include Position($top: 60px, $left: 60px);
+                                        strong {
+                                            display: block;
+                                            @include Bold;
+                                            line-height: 1.3;
+                                            font-size:32px;
+                                            margin-top:20px;
+                                        }
+                                        span {
+                                            display: block;
+                                            margin-top: 10px;
+                                            font-size:18px;
+                                        }
+                                    }
+                                    .text-position-b {
+                                        @include Position($bottom: 60px, $left: 60px);
+                                        strong {
+                                            display: block;
+                                            @include Bold;
+                                            line-height: 1.3;
+                                            font-size:32px;
+                                            margin-top:20px;
+                                            color:#fff;
+                                        }
+                                        span {
+                                            display: block;
+                                            margin-top: 10px;
+                                            font-size:18px;
+                                            color:#fff;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .slick-dots {
+                            background-color: rgba(0, 0, 0, 0);
+                            margin-top: 20px;
+                            li {margin:0 6.5px}
+                            button:before {
+                                width: 7px;
+                                height: 7px;
+                            }
+                            .slick-active button:before {
+                                width: 7px;
+                                height: 7px;
+                                border: 3.5px solid #2B2B2B;
+                            }
+                            .slick-active button:after {
+                                height: 3.5px;
+                                width: 25px;
+                                margin-left: -3px;
+                            }
+                        }
+                    }
+                    .slider-btn {
+                        @include Position($top: 50%, $left: 0);
+                        width:100%;
+                        margin-top:-17px;
+                        > div {
+                            position: relative;
+                            .slick-arrow {
+                                @include Position($top: 50%);
+                                width: 15px;
+                                height: 15px;
+                                border-top: 3px solid rgba(0, 0, 0, 1);
+                                border-left: 3px solid rgba(0, 0, 0, 1);
+                                &.slick-prev {
+                                    left:-50px;
+                                }
+                                &.slick-next {
+                                    right:-50px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.maincard02 {  
+                
+            }
+            &.maincard03 {
+                //background-color:#F4FAFF;
+                .best-cont {
+                    @include Align-between-top;
+                    .best-tit {
+                        width:28%;
+                        padding-right:2%;
+                        h2 {
+                            text-align:left;
+                        }
+                        span {
+                            font-size:16px;
+                            display: block;
+                            padding-top:10px;
+                            color: #999;
+                        }
+                        > a {
+                            display: block;
+                            margin-top:45px;
+                        }
+                        b {
+                            @include Align-middle-left;
+                            @include Bold;
+                            display: block;
+                            
+                        }
+                    }
+                    .best-item {
+                        //width:70%;
+                        height:522px;
+                        @include Align-top-left;
+                        > div {
+                            height:100%;
+                            &.unit-main{
+                                width:340px;
+                                .unit {
+                                    height:100%;
+                                    margin-left:0;
+                                    .text {
+                                        strong {
+                                            font-size:32px;
+                                            @include Bold;
+                                        }
+                                    }
+                                    .cover {
+                                        @include Position($bottom: 5%, $left: -30%);
+                                        width:480px;
+                                        @include Align-middle;
+                                        img {width:480px;}
+                                    }
+                                }
+                            }
+                            .unit {
+                                position: relative;
+                                width:340px;
+                                margin-left:30px;
+                                height:47%;
+                                border:1px solid #ebebeb;
+                                border-radius:15px;
+                                background-color: #fff;
+                                .text {
+                                    padding:35px 40px;
+                                    strong {
+                                        font-size:18px;
+                                        @include Bold;
+                                        line-height: 1.5;
+                                    }
+                                    span {
+                                        font-size:18px;
+                                        line-height: 1.5;
+                                    }
+                                    b {
+                                        color:#F04040;
+                                        line-height: 1.5;
+                                        font-size: 18px;
+                                        @include Bold;
+                                    }
+                                }
+                                .flag.num {
+                                    border-radius:12px 0 12px 0;
+                                }
+                                .cover {
+                                    @include Position($bottom: 5%, $right:0);
+                                    width:249px;
+                                    img {width:249px;}
+                                }
+                            }
+                            & .unit + .unit {
+                                margin-top:30px;
+                            }
+                        }
+                        
+                        .text {
+                            @include Align-left-column;
+                        }
+                        
+                    }
+                }
+                
+            }
+            &.maincard04 {
+                position: relative;
+                overflow:hidden;
+                /*
+                &:before {
+                    display: block;
+                    content: '';
+                    width: 39%;
+                    height: 1px;
+                    background-color: #EBEBEB;
+                    @include Position($top: 130px, $left: 0);
+                }
+                &:after {
+                    display: block;
+                    content: '';
+                    width: 39%;
+                    height: 1px;
+                    background-color: #EBEBEB;
+                    @include Position($top: 130px, $right: 0);
+                }*/
+                
+                .section-tit {
+                    //@include Align-middle;
+                }
+                .section-nav-list {
+                    background-color: #fff;
+                    height: 120px;
+                    border:1px solid #EBEBEB;
+                    border-radius: 20px;
+                    @include Align-middle;
+                    > a {
+                        @include Align-middle-column;
+                        width: 90px;
+                        height: 90px;
+                        border-radius: 100%;
+                        margin:0 5px;
+                        > b {
+                            line-height: 1;
+                            height: 30px;
+                            @include Align-middle;
+                            img {
+                                //mix-blend-mode: multiply;
+                            }
+                        }
+                        > span {
+                            display: block;
+                            margin-top: 10px;
+                            font-size: 14px;
+                            line-height: 1;
+                        }
+                        &.active {
+                            background-color: #F5F9FF;
+                            > span {
+                                @include Bold;
+                            }
+                        }
+                    }
+                }
+                .section-cont {
+                    width: 100%;
+                    padding:40px 0 80px;
+                    text-align: center;
+                    .swiper-container {
+                        min-width: 1080px;
+                        margin: 0 auto;
+                        box-sizing:border-box;
+                        &.swiper-container-horizontal {
+                            min-width: 1900px;
+                        }
+                        .swiper-wrapper {
+                            justify-content: center;
+                        }
+                        &.swiper-container-horizontal {
+                            .swiper-wrapper {
+                                justify-content: flex-start;
+                            }
+                        }
+                        .swiper-slide {
+                            text-align:center;
+                            //width:13.3%;
+                            width:260px;
+                            margin-right:10px;
+                            .cover {
+                                position: relative;
+                                //width:192px;
+                                width:260px;
+                                height: 140px;
+                                margin:0 auto;
+                                @include Align-middle;
+                                img {
+                                    width:260px;
+                                }
+                                button {
+                                    @include Position($bottom: 10px, $right: 20px);
+                                    .icon.complete_red {
+                                        background-position:right bottom;
+                                        background-size:60%;
+                                    }
+                                    
+                                }
+                            }
+                            .text {
+                                padding-top:10px;
+                                strong {
+                                    font-size:18px;
+                                    line-height: 1.5;
+                                    @include Bold;
+                                }
+                            }
+                            .none {
+                                padding:25.5px 0;
+                                box-sizing: border-box;
+                                span {
+                                    display: block;
+                                    margin-top:20px;
+                                    font-size: 16px;
+                                    line-height: 1.4;
+                                }
+                            }
+                        }
+                        .swiper-button-next {
+                            right:0;
+                            top:50%;
+                        }
+                        .swiper-button-prev {
+                            left:0;
+                            top:50%;
+                        }
+                    }
+                }
+                .section-btn {
+                    width:400px;
+                    margin:0 auto;
+                    button {
+                        border-radius:50px;
+                        .goEstimate {
+                            margin-left:10px;
+                            margin-bottom:2px;
+                        }
+                    }
+                }
+                
+            }
+            &.maincard05 {
+               //background-color:#FAFAFA;
+            }
+            &.maincard06 {
+            
+            }
+            &.maincard07 {
+                //background-color:#FFF4F4;
+            }
+            &.maincard08 {
+                position: relative;
+                &:before {
+                    content: '';
+                    width:100%;
+                    height:460px;
+                    @include Position($top: 0, $left: 0);
+                }
+                .section-video {
+                    padding-bottom:50px;
+                    .unit-img {
+                        position: relative;
+                        @include Align-middle;
+                        overflow: hidden;
+                        border-radius: 15px;
+                        .video-play {
+                            display:block;
+                            @include Position($top:50%, $left:50%);
+                            @include Background($sprite:'btn_play', $type:'png', $position:center center);
+                            width:107px;
+                            height:113px;
+                            margin-left:-55px;
+                            margin-top:-57px;
+                        }
+                        .text {
+                            @include Position($bottom:55px, $left:55px);
+                            img {
+                                width:81px;
+                                height:81px;
+                            }
+                            span {
+                                font-size:32px;
+                                color:#fff;
+                                vertical-align:middle;
+                                margin-left:30px;
+                                @include Ellipsis($w:700px, $lines:1);
+                                @include Bold;
+                                display:inline-block;
+                            }
+                        }
+                    }
+                }
+                .section-cont {
+                    position: relative;
+                    .swiper-wrapper {
+                        @include Align-between;
+                        .swiper-slide {
+                            width:520px;
+                            a {
+                                @include Align-middle-left;
+                                .cover {
+                                    background-color:#EEF1F6;
+                                    border-radius:15px;
+                                    text-align:center;
+                                    width:230px;
+                                    height:157px;
+                                    @include Align-middle;
+                                    flex:none;
+                                    img {width:192px;}
+                                }
+                                .text {
+                                    @include Align-top-left-column;
+                                    padding-left:25px;
+                                    strong {
+                                        @include Bold;
+                                        font-size:22px;
+                                        line-height: 1.5;
+                                        width: 265px;
+                                        .flag {
+                                            vertical-align: text-bottom;
+                                            margin: 0 5px;
+                                        }
+                                    }
+                                    span {
+                                        font-size:18px;
+                                        line-height: 1.5;
+                                        padding:5px 0 20px;
+                                        width: 265px;
+                                    }
+                                    b {
+                                        @include Bold;
+                                        color:#F04040;
+                                        line-height: 1.5;
+                                        font-size:18px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.maincard09 {
+                //background-color: #FAFAFA;
+            }
+            &.maincard10 {
+                .section-cont {
+                    .unit-list {
+                        .unit-review {
+                            .img {
+                                width:247px;
+                                height:130px;
+                                @include Align-middle;
+                                img {
+                                    width: 247px;
+                                }
+                            }
+                            .text {
+                                > span {padding:0;}
+                                > strong {
+                                    @include Ellipsis($lines:2); 
+                                    max-height: 42px;
+                                }
+                            }
+                            .descri {
+                                @include Align-between;
+                                margin-top:10px;
+                                span {
+                                    margin-left:0; 
+                                }
+                                .stars {
+                                    margin-top:0;
+                                    margin-left:auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            /*각타입 별 css*/
+            .mainTypeC.section-cont {
+                position: relative;
+                .swiper-wrapper {
+                    @include Align-between;
+                    align-items: flex-start;
+                    .swiper-slide {
+                        width:525px;
+                        .list-wrap { 
+                            @include Align-middle-left;
+                            background-color: #fff;
+                            border:1px solid #ebebeb;
+                            border-radius: 15px;
+                            padding:40px 30px;
+                            height: 240px;
+                            box-sizing: border-box;
+                            position: relative;
+                            overflow: hidden;
+                            .flag-wrap {
+                                @include Position($left:auto, $right: 30px, $top:30px);
+                                z-index: 2;
+                            }
+                            .flag-inline-wrap {
+                                @include Position($right: 20px, $top:20px);
+                                z-index: 2;
+                            }
+                            .cont {
+                                @include Align-left-column;
+                                //margin-bottom:20px;
+                                strong {
+                                    @include Align-top-left;
+                                    font-size:26px;
+                                    @include Bold;
+                                    line-height: 1.3;
+                                    .flag {
+                                        flex:none;
+                                        margin-top:2px;
+                                    }
+                                    .hot {
+                                        margin-left:5px;
+                                        margin-top:-5px;
+                                        vertical-align: middle;
+                                        background-color: #C489FF;
+                                        color:#fff;
+                                        border:0;
+
+                                    }
+                                }
+                                b {
+                                    padding-top:5px;
+                                    line-height: 1.4;
+                                }
+                                .text {
+                                    margin-top:20px;
+                                    font-size: 13px;
+                                    @include Bold;
+                                    span {
+                                        @include Bold;
+                                        font-size:18px;
+                                        display:block;
+                                        & + span {
+                                            color:#F04040;
+                                            display: inline-block;
+                                        }
+                                    }
+                                }
+                            }
+                            .cover {
+                                @include Position($bottom:30px, $right: -80px);
+                                width:340px;
+                                overflow:hidden;
+                                @include Align-middle;
+                                img {
+                                    width:340px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .mainTypeA.section-cont {
+                .swiper-wrapper {
+                    @include Align-top-left;
+                    .swiper-slide {
+                        width:340px;
+                        margin-right: 30px;
+                        a {
+                            display: block;
+                            position: relative;
+                            background-color: #fff;
+                            border:1px solid #ebebeb;
+                            border-radius: 25px;
+                            .img {
+                                .flag-wrap {
+                                    top:20px;
+                                    left:20px;
+                                }
+                                .cover {
+                                    @include Align-middle;
+                                    position: relative;
+                                    z-index: 1;
+                                    height:200px;
+                                    width:270px;
+                                    margin:0 auto;
+                                    img {
+                                        width:270px;
+                                        position: relative;
+                                        left:0;
+                                        top:30px;
+                                    }
+                                }
+                                &:after {
+                                    display: block;
+                                    content: '';
+                                    @include Position($top: -1px, $left: -1px);
+                                    width: 340px;
+                                    height: 160px;
+                                    background-color: #D9E6EA;
+                                    border-radius: 25px 25px 0 0;
+                                }
+                            }
+                            .text {
+                                text-align:left;
+                                padding:30px 40px 53px;
+                                @include Align-left-column;
+                                height: 140px;
+                                strong {
+                                    //@include Align-top-left;
+                                    display: block;
+                                    @include Bold;
+                                    line-height: 1.3;
+                                    font-size:22px;
+                                    .flag {
+                                        //flex:none;
+                                        vertical-align: text-bottom;
+                                        margin: 0 5px;
+                                    }
+                                }
+                                span {
+                                    display: block;
+                                    //color: #999;
+                                    margin-top: 10px;
+                                    line-height: 1.4;
+                                    font-size:18px;
+                                }
+                                .price {
+                                    width:100%;
+                                    color:#F04040;
+                                    @include Bold;
+                                    font-size:22px;
+                                    padding-top:5px;
+                                    margin-top: auto;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+
+            .mainTypeB.section-cont {
+                position: relative;
+                .swiper-wrapper {
+                    @include Align-between;
+                    .swiper-slide {
+                        width:520px;
+                        a {
+                            @include Align-middle-left;
+                            .cover {
+                                background-color:#EEF1F6;
+                                border-radius:15px;
+                                text-align:center;
+                                @include Align-middle;
+                                width:230px;
+                                height:157px;
+                                flex:none;
+                                img {width:192px;}
+                            }
+                            .text {
+                                @include Align-top-left-column;
+                                padding-left:25px;
+                                strong {
+                                    //@include Align-top-left;
+                                    @include Bold;
+                                    font-size:22px;
+                                    line-height: 1.3;
+                                    width: 265px;
+                                    display: block;
+                                    .flag {
+                                        //flex:none;
+                                        //margin-top:-2px;
+                                        vertical-align: text-bottom;
+                                        margin: 0 5px;
+                                    }
+                                }
+                                span {
+                                    font-size:18px;
+                                    padding:5px 0 20px;
+                                    line-height: 1.4;
+                                    width: 265px;
+                                }
+                                b {
+                                    @include Bold;
+                                    color:#F04040;
+                                    font-size:18px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .maincardD.section-cont {
+                position: relative;
+                .swiper-wrapper {
+                    @include Align-between;
+                    .swiper-slide {
+                        .cover {
+                            //@include Position($top:0, $right: 0);
+                            /*
+                            &:after {
+                                display:block;
+                                content: '';
+                                @include Position($top: 0, $right: 10%);
+                                width: 1px;
+                                height: 120px;
+                                background-color: #fff;
+                                animation: height 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+                            }*/
+                        }
+                        .Dday-time {
+                            @include Position($bottom: 55px, $right: 45px);
+                            > strong {
+                                display: block;
+                                text-align: right;
+                                color: #fff;
+                                letter-spacing: 3px;
+                                font-size: 20px;
+                            }
+                            .date {
+                                margin-top:10px;
+                                > span {
+                                    line-height: .9;
+                                    font-size:70px;
+                                    color:#fff;
+                                    @include Bold;
+                                    font-family: "SpoqaB", serif !important;
+                                    height: 70px;
+                                    @include Vertical-inline;
+                                }
+                                > em {
+                                    @include Vertical-inline;
+                                    @include Background($sprite:'bg-time', $position:center center, $path:'bgs');
+                                    height: 70px;
+                                    line-height: .9;
+                                    width: 25px;
+                                    font-size:70px;
+                                    color:#fff;
+                                    @include Hide_txt;
+                                    @include Bold;
+                                }
+                            }
+                            /*
+                            > strong {
+                                @include Position($bottom: 100px, $right: 11.5%);
+                                @include Bold;
+                                width:90px;
+                                transform: scale(0.0) rotate(270deg);
+                                color: #fff;
+                                letter-spacing: 3px;
+                                font-size: 20px;
+                                animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
+                            }
+                            .date {
+                                @include Position($bottom: 60px, $right: 6%);
+                                span{
+                                    font-family: "SpoqaB", serif !important;
+                                    @include Align-between;
+                                    line-height: .9;
+                                    display: block;
+                                    font-size:70px;
+                                    color:#fff;
+                                    @include Bold;
+                                    opacity: 0;
+                                    animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) 3s both;
+                                }
+                            }
+                            */
+                        }
+                    }
+                }
+                
+            }
+
+
+        }
+    }
+}
+
+
+
+
+
+
+
+

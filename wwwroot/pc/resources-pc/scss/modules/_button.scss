@@ -1,0 +1,712 @@
+.btn{
+	@include Vertical-inline;
+	height: 40px;
+	padding: 0 15px;
+	box-sizing: border-box;
+	line-height: 1;
+	color:#2B2B2B;
+	&-family{
+		background-color: #fff;
+		border: 1px solid #EBEBEB;
+		border-radius: 5px;
+		font-size: 13px;
+		padding-right: 35px;
+		@include Background($sprite:'ico-select3', $size:6px, $position: center right 15px); 
+	}
+	&-blackC{
+		background-color: #2B2B2B;
+		border: 1px solid #2B2B2B;
+		border-radius: 100%;
+		width: 54px;
+		height: 54px;
+		padding:0;
+	}
+	&-default{
+		width: 100%;
+		color: #fff;
+		border-radius: 16px;
+		font-size: 18px;
+		height: 68px;
+		border: 1px solid #B4B8BF;
+		background-color: #B4B8BF;
+		pointer-events: none;
+		@include Bold;
+		&.noRadius {
+			border-radius: 0;
+		}
+		&.active {
+			border: 1px solid #F04040;
+			background-color: #F04040;
+			pointer-events: auto;
+		}
+		&.eventsAuto {
+			pointer-events: auto;
+		}
+		&.black {
+			border: 1px solid #2B2B2B;
+			background-color: #2B2B2B;
+			pointer-events: auto;
+		}
+		&.gray {
+			border: 1px solid #EFF2F7;
+			background-color: #EFF2F7;
+			color: #2B2B2B;
+			pointer-events: auto;
+		}
+		&.grayFill {
+			border: 1px solid #EBEBEB;
+			background-color: #FAFAFA;
+			color: #2B2B2B;
+			pointer-events: auto;
+		}
+	}
+	&-white {
+		width: 100%;
+		border-radius: 16px;
+		font-size: 18px;
+		border: 1px solid #EBEBEB;
+		background-color: #fff;
+		@include Bold;
+		@include Align-middle;
+		&.grayBorder {
+			border-color: #2B2B2B !important;
+		}
+	}
+	&-more {
+		width: 100%;
+		border-radius: 16px;
+		font-size: 18px;
+		border: 1px solid #EBEBEB;
+		background-color: #fff;
+		@include Bold;
+		@include Align-middle;
+		&:after {
+			content:'';
+			@include Background($sprite:'ico-btn-more', $size:14px, $position:right center);
+			width:14px;
+			height:7px;
+			margin-left: 8px;
+		}
+	}
+	&-gray {
+		width: 100%;
+		border-radius: 16px;
+		font-size: 18px;
+		border: 1px solid #B4B8BF;
+		background-color: #B4B8BF;
+		color: #fff;
+		@include Bold;
+		@include Align-middle;
+	}
+	&-orange {
+		width: 100%;
+		color: #F04040;
+		border-radius: 16px;
+		font-size: 18px;
+		border: 1px solid #FDE4E4;
+		background-color: #FDE4E4;
+		@include Bold;
+		@include Align-middle;
+	}
+	&-blue {
+		width: 100%;
+		color: #fff;
+		border-radius: 16px;
+		font-size: 18px;
+		border: 1px solid #20BBC4;
+		background-color: #20BBC4;
+		@include Bold;
+		@include Align-middle;
+		border-radius: 0;
+	}
+	&-gray2 {
+		width: 100%;
+		border-radius: 16px;
+		font-size: 18px;
+		border: 1px solid #EBEBEB;
+		background-color: #EFF2F7;
+		color:  #2B2B2B;
+		//@include Bold;
+		@include Align-middle;
+	}
+	&-red {
+		width: 100%;
+		color: #fff;
+		border-radius: 16px;
+		font-size: 18px;
+		border: 1px solid #F04040;
+		background-color: #F04040;
+		@include Bold;
+		@include Align-middle;
+	}
+	&-column {
+		@include Align-middle-column;
+		font-size: 18px;
+		span {
+			font-size: 13px;
+			@include Normal;
+			margin-bottom: 5px;
+		}
+	}
+	&-init {
+		border-radius: 16px;
+		font-size: 18px;
+		height: 68px;
+	}
+	&-sns-naver {
+		@include Background($sprite:'ico-naver_login', $position: center center); 
+		@include Hide_txt;
+		width: 55px;
+		height: 55px;
+	}
+	&-sns-kakao {
+		@include Background($sprite:'ico-kakao_login', $position: center center); 
+		@include Hide_txt;
+		width: 55px;
+		height: 55px;
+	}
+	&-sns-fb {
+		@include Background($sprite:'ico-fb_login', $position: center center); 
+		@include Hide_txt;
+		width: 55px;
+		height: 55px;
+	}
+	&-toggle {
+		width: 30px;
+		height: 30px;
+		position: relative;
+		cursor: pointer;
+		&:after {
+			display: block;
+			content: '';
+			@include Position($top: 50%, $right: 50%);
+			@include Background($sprite:'ico-arrow-down', $size:14px, $position:center center);
+			width: 14px;
+			height: 14px;
+			margin: -7px -7px 0 0;
+			transition: transform .5s;
+			transform: rotate(0deg);
+		}
+		&.gray:after {
+			@include Background($sprite:'ico-arrow-down2', $size:14px, $position:center center);
+		}
+		&.active:after {
+			transform: rotate(180deg);
+		}
+	}
+	&-simple{
+		border: 1px solid #EBEBEB;
+		height: 48px;
+		border-radius: 15px;
+		padding:0 20px;
+		background-color: #fff;
+		@include Align-middle;
+		&.active{
+			color: #0074b2;
+			border-color: #0074b2;
+		}
+		&.black {
+			color: #fff;
+			border-color: #2B2B2B;
+			background-color: #2B2B2B;
+		}
+		&.mid {
+			height: 40px;
+			padding: 0 15px;
+			border-radius: 20px;
+		}
+		&.off {
+			color:#c1c1c1;
+			background-color: #fafafa;
+			cursor: default;
+		}
+	}
+	&-pannel {
+		@include Align-middle;
+		width: 30px;
+		height: 30px;
+		padding:0;
+		position: relative;
+		cursor: pointer;
+	}
+	&-link{
+		@include Vertical-inline;
+		box-sizing: border-box;
+		line-height: 1;
+		color:#2B2B2B;
+		border-bottom: 1px solid #2B2B2B;
+		font-size: 14px;
+		padding-bottom: 1px;
+	}
+	&-link-view{
+		display: inline-flex;
+		align-items: center;
+		box-sizing: border-box;
+		line-height: 1;
+		color:#2B2B2B;
+		font-size: 14px;
+		&:after {
+			display: block;
+			content: '';
+			@include Background($sprite:'ico-next', $position:center center);
+			width: 5px;
+			height: 9px;
+			margin-left: 5px;
+		}
+	}
+	&-link-view-big {
+		@include Align-between;
+		box-sizing: border-box;
+		line-height: 1;
+		font-size: 18px;
+		height: 80px;
+		border: 1px solid #EBEBEB;
+		background-color: #FAFAFA;
+		color: #2B2B2B;
+		padding: 0 40px;
+		border-radius: 16px;
+		@include Bold;
+		&:after {
+			display: block;
+			content: '';
+			@include Background($sprite:'ico-next03', $position:center center);
+			width: 6px;
+			height: 11px;
+			margin-left: 5px;
+			flex:none;
+			margin-left: auto;
+		}
+	}
+	&-share{
+		@include Align-middle;
+		width: 50px;
+		height: 50px;
+		background-color: #EFF2F7;
+		border-radius: 100%;
+		&.ty2 {
+			background-color: #fff;
+			box-shadow: 0 0px 10px rgba(0, 0, 0, 0.05);
+		}
+	}
+	&-paging-before {
+		@include Hide_txt;
+		@include Align-middle;
+		@include Background($sprite:'ico-paging-before', $position:center center);
+		width: 36px;
+		height: 40px;
+		box-sizing: border-box;
+		border: 1px solid #EBEBEB;
+		background-color: #fff;
+		border-radius: 10px;
+	}
+	&-paging-prev {
+		@include Hide_txt;
+		@include Align-middle;
+		@include Background($sprite:'ico-paging-prev', $position:center center);
+		width: 36px;
+		height: 40px;
+		box-sizing: border-box;
+		border: 1px solid #EBEBEB;
+		background-color: #fff;
+		border-radius: 10px;
+	}
+	&-paging-next {
+		@include Hide_txt;
+		@include Align-middle;
+		@include Background($sprite:'ico-paging-next', $position:center center);
+		width: 36px;
+		height: 40px;
+		box-sizing: border-box;
+		border: 1px solid #EBEBEB;
+		background-color: #fff;
+		border-radius: 10px;
+	}
+	&-paging-after {
+		@include Hide_txt;
+		@include Align-middle;
+		@include Background($sprite:'ico-paging-after', $position:center center);
+		width: 36px;
+		height: 40px;
+		box-sizing: border-box;
+		border: 1px solid #EBEBEB;
+		background-color: #fff;
+		border-radius: 10px;
+	}
+	&-small{
+		border: 1px solid #EBEBEB;
+		background-color: #fff;
+		border-radius: 20px;
+		padding: 0 15px;
+		height: 40px;
+		box-sizing: border-box;
+		@include Align-middle;
+		&.active {
+			background-color: #4054F0;
+			border-color: #4054F0;
+			color: #fff;
+		}
+		&.activeGray {
+			background-color: #EFF2F7;
+			border-color: #EFF2F7;
+		}
+		> .icon {
+			margin-right:5px;
+		}
+	}
+	&-anchor{
+		border: 1px solid #EBEBEB;
+		background-color: #FAFAFA;
+		border-radius: 15px;
+		padding: 0 15px;
+		height: 40px;
+		font-size:15px;
+		box-sizing: border-box;
+		@include Align-middle;
+	}
+	&-middle {
+		border: 1px solid #EBEBEB;
+		background-color: #fff;
+		border-radius: 30px;
+		padding: 0 35px;
+		height: 40px;
+		font-size:15px;
+		box-sizing: border-box;
+		@include Align-middle;
+		@include Bold;
+		> i {
+			margin-left:.4rem;
+		}
+	}
+	&-modified{
+		font:0/0 a !important;
+		@include Background($sprite:'ico-modified', $size:4px,  $position:center center);
+		border-radius: 100%;
+		width: 20px;
+		height: 40px;
+		background-color:transparent;
+	}
+	&-inputReset{
+		@include Background($sprite:'ico-close-search',  $position:center center);
+		width:30px;
+		height:30px;
+	}
+	&-search{
+		@include Background($sprite:'ico-search',  $position:center center);
+		width:19px;
+		height:19px;
+	}
+	&-goTop {
+		@include Background($sprite:'ico-goTop', $position:center center);
+		width: 56px;
+		height: 56px;
+		@include Hide_txt;
+	}
+}
+
+.section-btns {
+	margin-top: 70px;
+	@include Align-middle;
+	> .btn {
+		width: 265px;
+		height: 68px;
+		font-size: 18px;
+		+ .btn {
+			margin-left: 10px;
+		}
+	}
+}
+
+
+.item-add-btns {
+	@include Align-middle;
+	position: relative;
+	> button {
+		position: relative;
+		z-index: 1;
+	}
+	&:after{
+		display:block;
+		content: '';
+		width: 100%;
+		height: 1px;
+		background-color: #EBEBEB;
+		@include Position($top: 50%, $left: 0);
+		margin-top:-.5px;
+	}
+}
+.item-remove-btns {
+	@include Align-middle;
+	position: relative;
+	> button {
+		position: relative;
+		z-index: 1;
+	}
+	&:after{
+		display:block;
+		content: '';
+		width: 100%;
+		height: 1px;
+		background-color: #EBEBEB;
+		@include Position($top: 50%, $left: 0);
+		margin-top:-.5px;
+	}
+}
+
+.toggle-wrapper {
+	position: relative;
+	height: 16px;
+	@include Vertical-inline;
+	.toggle {
+		position: relative;
+		display: inline-block;
+	}
+	input {
+		height: 16px;
+		left: 0;
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		width: 20px;
+	}
+	.normal label {
+		background: #F04040;
+	}
+	input:checked + label:before {
+		left: 17px;
+	}
+	input:checked + label {
+		background: #F04040;
+	}
+	.normal label:before {
+		content: '';
+        position: absolute;
+		border: none;
+		width: 20px;
+		height: 20px;
+		background: #fff;
+		transform: rotate(-25deg);
+	}
+	.normal label:after {
+		content: '';
+        position: absolute;
+		background: transparent;
+		height: 100%;
+		border-radius: 30px;
+		top: 0px;
+		width: 100%;
+		left: 0px;
+		height: 16px;
+		z-index: 0;
+	}
+	
+	label.toggle-item {
+		width: 34px;
+		background:#B4B8BF;
+		height: 16px;
+		display: inline-block;
+		border-radius: 50px;
+		position: relative;
+		transition: all .3s ease;
+		transform-origin: 20% center;
+		cursor: pointer;
+	}
+	label.toggle-item:before {
+		content: '';
+        position: absolute;
+		display: block;
+		transition: all .2s ease;
+		width: 20px;
+		height: 20px;
+		top: -2px;
+		left: -2px;
+		border-radius: 100%;
+		transition: .3s ease;
+		box-shadow: 0 1px 5px rgba(96, 97, 112, 0.3);
+	}
+
+}
+
+.toggle-share {
+	display: inline-flex;
+	position: relative;
+	.btn-share {
+		@include Align-middle;
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+		background-color: #fff;
+    	border: 1px solid #ebebeb;
+		margin:0;
+	}
+	.toggle-share-list {
+		@include Position($top: 0, $right:55px );
+		border-radius: 30px;
+		border: 1px solid #EBEBEB;
+		background-color: #fff;
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+		opacity: 0;
+		transform: scaleX(0);
+		transform-origin: 100% 100%;
+		transition: transform .5s, opacity .5s;
+		> ul {
+			@include Align-middle-left;
+			padding:0 5px;
+			> li {
+				position: relative;
+				a {
+					@include Align-middle-column;
+					height: 50px;
+					width: 50px;
+				}
+				& + li {
+					&:before{
+						@include Position($top: 50%, $left: 0);
+						display: block;
+						content: '';
+						width: 1px;
+						height: 11px;
+						margin-top:-5.5px;
+						background-color: #EBEBEB;
+					}
+				}
+			}
+		}
+		&.active {
+			opacity: 1;
+			transform: scaleX(1);
+		}
+	}
+}
+
+.toggle-modified {
+	display: inline-flex;
+	position: relative;
+	.btn-modified {
+
+	}
+	.toggle-modified-list {
+		@include Position($top: -5px, $left:45px );
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+		border: 1px solid #333333;
+		background-color: #fff;
+		width: 124px;
+		box-sizing: border-box;
+		padding: 16px;
+		border-radius: 15px;
+		opacity: 0;
+		transform: translateY(100px);
+		transform-origin: 100% 100%;
+		transition: transform .5s, opacity .5s;
+		> ul {
+			> li {
+				a {
+					display: block;
+					line-height: 1.3;
+					&:hover {
+						@include Bold;
+						color: #F04040;
+					}
+				}
+				& + li {margin-top: 12px;}
+			}
+		}
+		&.active {
+			opacity: 1;
+			transform: translateY(0);
+		}
+		&:before {
+			@include Position($top: 20px, $left:-6.4px );
+			display: block;
+			content: '';
+			@include Background($sprite:'ico-modified-arr', $size:7px, $position:center right);
+			width:7px;
+			height:11px;
+		}
+	}
+}
+
+//토글 버튼 스타일
+.common-toggle-list {
+	border-top: 1px solid #EBEBEB;
+	> li {
+		border-bottom: 1px solid #EBEBEB;
+	}
+	.common-toggle-btn {
+		.common-toggle-tit {
+			position: relative;
+			@include BreakWord;
+			padding: 20px 40px 20px 0;
+			line-height: 1.4;
+			display: block;
+			a {
+				line-height: 1.4;
+				display: block;
+				@include BreakWord;
+			}
+		}
+		.btn-toggle {
+			@include Position($top: 15px, $right: 5px);
+		}
+		&.active {
+			.common-toggle-tit {
+				@include Bold;
+			}
+			.btn-toggle:after {
+				transform: rotate(180deg);
+			}
+		}
+		
+	}
+	.common-toggle-cont {
+		display: none;
+		border-top: 1px solid #EBEBEB;
+		background-color: #FAFAFA;
+		padding: 30px;
+		.common-toggle-txt {
+			line-height: 1.4;
+			@include BreakWord;
+			.toggle-table {
+				table {
+					border: 1px solid #EBEBEB;
+					
+					th {
+						border-right: 1px solid #EBEBEB;
+						text-align: center;
+						vertical-align: middle;
+						background-color: #EFF2F7;
+						font-size: 15px;
+						padding: 16px 10px;
+						line-height: 1.4;
+						@include Bold;
+						&:last-child {
+							border-right: 0;
+						}
+					}
+					td{
+						border-right: 1px solid #EBEBEB;
+						text-align: center;
+						vertical-align: top;
+						font-size: 15px;
+						padding: 16px 10px;
+						line-height: 1.4;
+						&:last-child {
+							border-right: 0;
+						}
+						img {
+							width: auto;
+							max-width: 100%;
+						}
+					}
+					tbody {
+						tr {
+							&:nth-child(even){
+								background-color: #FAFAFA;
+							}
+						}
+					}
+				}
+				
+			}
+		}
+	}
+}
+
+
