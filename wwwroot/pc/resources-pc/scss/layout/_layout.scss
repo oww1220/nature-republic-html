@@ -28,3 +28,37 @@
     @include Background($sprite:'footer-top-bg', $type:'jpg', $position:center top, $path:'bg');
     background-repeat: repeat-x;
 }
+
+
+.rightQuickMenuWrap {
+    @include Position($position:fixed, $top: 0, $right: 0, $bottom: 0);
+    width: 220px;
+    border-left: 1px solid #dbdbdb;
+    background: #fff;
+    transition:transform 0.5s;
+    transform:translateX(221px);
+    z-index: 201;
+    .btn-wrap {
+        @include Position($top: 50%, $left: -48px);
+        margin-top: -100px;
+        > div {
+            position: relative;
+            button {
+                @include Position($top: 0, $right: 0);
+                @include Hide_txt;
+                width: 49px;
+                height: 49px;
+            }
+        }
+        .off {display: block;}
+        .on {display: none;}
+    }
+    .right-wrap {
+        text-align: center;
+    }
+    &.active {
+        transform:translateX(0px);
+        .off {display: none;}
+        .on {display: block;}
+    }
+}

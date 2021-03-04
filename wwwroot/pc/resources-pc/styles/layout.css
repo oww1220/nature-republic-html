@@ -126,4 +126,74 @@
 	background-repeat: repeat-x;
 }
 
+.rightQuickMenuWrap {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 220px;
+	border-left: 1px solid #dbdbdb;
+	background: #fff;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: -webkit-transform 0.5s;
+	-o-transition: -o-transform 0.5s;
+	-moz-transition: transform 0.5s, -moz-transform 0.5s;
+	transition: transform 0.5s;
+	transition: transform 0.5s, -webkit-transform 0.5s, -moz-transform 0.5s, -o-transform 0.5s;
+	-webkit-transform: translateX(221px);
+	   -moz-transform: translateX(221px);
+	    -ms-transform: translateX(221px);
+	     -o-transform: translateX(221px);
+	        transform: translateX(221px);
+	z-index: 201;
+}
+
+.rightQuickMenuWrap .btn-wrap {
+	position: absolute;
+	top: 50%;
+	left: -48px;
+	margin-top: -100px;
+}
+
+.rightQuickMenuWrap .btn-wrap > div {
+	position: relative;
+}
+
+.rightQuickMenuWrap .btn-wrap > div button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font: 0/0 a;
+	width: 49px;
+	height: 49px;
+}
+
+.rightQuickMenuWrap .btn-wrap .off {
+	display: block;
+}
+
+.rightQuickMenuWrap .btn-wrap .on {
+	display: none;
+}
+
+.rightQuickMenuWrap .right-wrap {
+	text-align: center;
+}
+
+.rightQuickMenuWrap.active {
+	-webkit-transform: translateX(0px);
+	   -moz-transform: translateX(0px);
+	    -ms-transform: translateX(0px);
+	     -o-transform: translateX(0px);
+	        transform: translateX(0px);
+}
+
+.rightQuickMenuWrap.active .off {
+	display: none;
+}
+
+.rightQuickMenuWrap.active .on {
+	display: block;
+}
+
 /*# sourceMappingURL=../maps/layout.css.map */

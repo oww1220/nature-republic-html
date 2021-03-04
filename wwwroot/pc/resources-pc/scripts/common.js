@@ -54,6 +54,19 @@ MUI.slide.init('.col3 .swiper-container','swiper', {
 });
 
 
+$('.rightQuickMenuWrap .btn-wrap button').on('click', function() {
+    var $target = $('.rightQuickMenuWrap');
+    if($target.hasClass('active')) {
+        $target.removeClass('active');
+    }
+    else{
+        $target.addClass('active');
+    }
+
+    
+});
+
+
 
 
 /* 유틸start-------------------------------------------------*/

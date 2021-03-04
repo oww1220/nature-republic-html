@@ -121,6 +121,21 @@
             }
         }
     }
+
+    .col6 {
+        margin-bottom: 140px;
+        .section-col6 {
+            @include Align-between-top;
+            > div {
+                flex: none;
+                ul {
+                    @include Align-top-column;
+                    li + li {margin-top:10px;}
+                }
+            }
+        }
+    }
+
     
 }
 
