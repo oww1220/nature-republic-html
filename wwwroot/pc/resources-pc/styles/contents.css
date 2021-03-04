@@ -52,9 +52,9 @@
 	-webkit-background-size: auto auto;
 	   -moz-background-size: auto;
 	        background-size: auto;
-	-webkit-background-size: 30% 30%;
-	   -moz-background-size: 30%;
-	        background-size: 30%;
+	-webkit-background-size: 20% 20%;
+	   -moz-background-size: 20%;
+	        background-size: 20%;
 }
 
 .main-wrap .col1 .swiper-button .swiper-button-next {
@@ -64,9 +64,9 @@
 	-webkit-background-size: auto auto;
 	   -moz-background-size: auto;
 	        background-size: auto;
-	-webkit-background-size: 30% 30%;
-	   -moz-background-size: 30%;
-	        background-size: 30%;
+	-webkit-background-size: 20% 20%;
+	   -moz-background-size: 20%;
+	        background-size: 20%;
 }
 
 .main-wrap .col1 .swiper-button.active .swiper-button-prev,
@@ -78,6 +78,135 @@
 	position: absolute;
 	bottom: 25px;
 	left: 0;
+}
+
+.main-wrap .col2 {
+	position: relative;
+	z-index: 1;
+}
+
+.main-wrap .col2 .section-col2 {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	   -moz-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	   -moz-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+.main-wrap .col2 .section-col2 > div {
+	-webkit-box-flex: 0;
+	-webkit-flex: none;
+	   -moz-box-flex: 0;
+	    -ms-flex: none;
+	        flex: none;
+}
+
+.main-wrap .col2 .section-col2 > div:first-child {
+	width: 858px;
+}
+
+.main-wrap .col2 .section-col2 > div:first-child ul {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	   -moz-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	   -moz-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+.main-wrap .col2 .section-col2 > div:last-child ul li + li {
+	margin-top: 9px;
+}
+
+.main-wrap .col3 .section-col3 {
+	min-width: 1280px;
+	overflow: hidden;
+}
+
+.main-wrap .col3 .swiper-container {
+	min-width: 1900px;
+}
+
+.main-wrap .col3 .swiper-slide .cover {
+	position: relative;
+	width: 244px;
+	margin: 0 auto;
+}
+
+.main-wrap .col3 .swiper-slide .cover .hover {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.main-wrap .col3 .swiper-slide a:hover .hover {
+	display: block;
+}
+
+.main-wrap .col5 {
+	margin-bottom: 110px;
+}
+
+.main-wrap .col5 ul {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+}
+
+.main-wrap .col5 ul li {
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: -webkit-transform 0.3s;
+	-o-transition: -o-transform 0.3s;
+	-moz-transition: transform 0.3s, -moz-transform 0.3s;
+	transition: transform 0.3s;
+	transition: transform 0.3s, -webkit-transform 0.3s, -moz-transform 0.3s, -o-transform 0.3s;
+	width: 279px;
+	margin: 70px 20.5px 0;
+}
+
+.main-wrap .col5 ul li > a {
+	display: block;
+}
+
+.main-wrap .col5 ul li .cover {
+	position: relative;
+	margin: 0 auto;
+}
+
+.main-wrap .col5 ul li .cover .hover {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.main-wrap .col5 ul li a:hover .hover {
+	display: block;
 }
 
 .inner {

@@ -1,3 +1,18 @@
+/* (hover Effect) */
+[data-effect] li img { transition:transform 0.3s; }
+[data-effect] li.none:hover img { transform:none; }
+[data-effect="scale"] li a { display:block; overflow:hidden; }
+[data-effect="scale"] li:hover img { transform:scale(1.05); } /* 이미지 확대 */
+[data-effect="opacity"] li:hover img { opacity:0.8 } /* 이미지 불투명 */
+[data-effect="rotate_01"] li:hover img { transform:rotate(1.5deg); } /* 우측 회전 */
+[data-effect="rotate_02"] li:hover img { transform:rotate(-1.5deg); } /* 좌측 회전 */
+[data-effect="translateX_01"] li:hover img { transform:translateX(-5px); } /* 좌측 이동 */
+[data-effect="translateX_02"] li:hover img { transform:translateX(5px); } /* 우측 이동 */
+[data-effect="translateY_01"] li:hover { transform:translateY(-10px); } /* 위쪽 이동 */
+[data-effect="translateY_02"] li:hover img { transform:translateY(5px); } /* 아래쪽 이동 */
+
+
+
 .header-bn {
     background-color: #dbf9f1;
 }

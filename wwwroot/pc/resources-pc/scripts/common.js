@@ -46,6 +46,13 @@ $('.col1').on('mouseleave', function(){
     $('.col1 .swiper-button').removeClass('active');
 });
 
+MUI.slide.init('.col3 .swiper-container','swiper', {
+    slidesPerView: 7,
+    freeMode: true,
+    spaceBetween: 10,
+    loop: true,
+});
+
 
 
 

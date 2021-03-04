@@ -1,7 +1,6 @@
 .main-wrap {
     min-width: 1280px;
 
-
     .col1 {
         position: relative;
         text-align: center;
@@ -27,11 +26,11 @@
             }
             .swiper-button-prev {
                 @include Background($sprite:'arrow_left', $type:'gif', $position:45% center, $path:'bg');
-                background-size: 30%;
+                background-size: 20%;
             }
             .swiper-button-next {
                 @include Background($sprite:'arrow_right', $type:'gif', $position:55% center, $path:'bg');
-                background-size: 30%;
+                background-size: 20%;
             }
             &.active .swiper-button-prev,
             &.active .swiper-button-next {
@@ -40,6 +39,86 @@
         }
         .swiper-pagination-wrap{
             @include Position($bottom: 25px, $left: 0);
+        }
+    }
+
+    .col2 {
+        position: relative;
+        z-index: 1;
+        .section-col2 {
+            @include Align-between-top;
+            > div {
+                flex: none;
+
+                &:first-child {
+                    width: 858px;
+                    ul {
+                        @include Align-between-top;
+                    }
+                }
+                &:last-child {
+                    ul {
+                        li + li {
+                            margin-top: 9px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .col3 {
+        .section-col3 {
+            min-width: 1280px;
+            overflow: hidden;
+        }
+        .swiper-container{
+            min-width: 1900px;
+        }
+        .swiper-slide {
+            .cover {
+                position: relative;
+                width:244px;
+                margin: 0 auto;
+                .hover {
+                    display: none;
+                    @include Position($top:0, $left:0);
+                }
+            }
+            a:hover {
+                .hover {
+                    display: block;
+                }
+            }
+        }
+        
+    }
+
+    .col5 {
+        margin-bottom: 110px;
+        ul {
+            @include Align-box;
+            li {
+                transition:transform 0.3s;
+                width: 279px;
+                margin: 70px 20.5px 0;
+                > a {
+                    display: block;
+                }
+                .cover {
+                    position: relative;
+                    margin: 0 auto;
+                    .hover {
+                        display: none;
+                        @include Position($top:0, $left:0);
+                    }
+                }
+                a:hover {
+                    .hover {
+                        display: block;
+                    }
+                }
+            }
         }
     }
     
