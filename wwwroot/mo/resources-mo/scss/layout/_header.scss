@@ -1,0 +1,73 @@
+
+.header{
+	@include Position( $position:sticky, $top: -6.5rem, $left: 0);
+    z-index: 31;
+    box-sizing: border-box;
+    width: 100%;
+	background-color: #fff;
+	&.main {
+		@include Position( $position:sticky, $top: -6rem, $left: 0);
+		.header-top {
+			height: 6rem;
+		}
+	}
+
+	&-top{
+		box-sizing: border-box;
+		width: 100%;
+		height: 6.5rem;
+		background-color: #fff;
+		transition: all .5s ease .01ms;
+		font-size:1.7rem;
+		h1{
+			text-align: left;
+			width: 12rem;
+			padding: 1.5rem 0 0 1.7rem;
+			a {
+				display: inline-block;
+			}
+		}
+		
+		.btn-drawer {
+			width: 3.4rem;
+			height: 3.4rem;
+			border-radius: .7rem;
+			background-color: #DCDFE4;
+			@include Align-middle;
+			@include Position( $top: 1.5rem, $right: 1.7rem);
+		}
+
+	}
+
+	&-top.sub {
+		@include Align-middle;
+		background-color: #EFF2F7;
+		height: 6.5rem;
+		h1 {@include Bold;padding: 0 6rem;word-break: break-all;flex-shrink: 1;font-size: 1.4rem;width:auto;text-align: center;}
+		.btn-prev {
+			width: 3.4rem;
+			height: 3.4rem;
+			border-radius: .7rem;
+			background-color: #fff;
+			@include Align-middle;
+			@include Position( $top: 1.5rem, $left: 1.7rem);
+		}
+		
+
+	}
+
+	&.imgSub {
+		.header-top {
+			h1 {width: 12rem;}
+		}
+	}
+	&.white {
+		.header-top {
+			background-color: #fff;
+			.btn-prev {
+				border: 1px solid #ebebeb;
+			}
+		}
+	}
+
+}

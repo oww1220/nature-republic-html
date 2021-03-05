@@ -1,0 +1,13 @@
+.hasmap-wrap {
+    display:block; 
+    position:relative;
+    img {
+        width:100%;
+    }
+    a {
+        position:absolute; 
+        display:block; 
+        font:0/0 a;
+        background-color: rgba(0,0,0,0);
+    }
+}

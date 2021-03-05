@@ -1,0 +1,980 @@
+.icon {
+    @include Vertical-inline;
+    @include Hide_txt;
+    flex: none;
+    &.filter {
+        @include Background($sprite:'ico-select', $size:100% auto, $position:center center);
+        width: 1.1rem;
+        height: 1.1rem; 
+    }
+    &.filterClose {
+        @include Background($sprite:'ico-close', $size:100% auto, $position:center center);
+        width: 0.7rem;
+        height: 0.7rem;
+    }
+    &.fast {
+        @include Background($sprite:'ico-fast', $size:100% auto, $position:center center);
+        width: 0.9rem;
+        height: 0.9rem;
+    }
+    &.pro {
+        @include Background($sprite:'ico-estimate-btn2', $size:100% auto, $position:center center);
+        width: 0.9rem;
+        height: 0.9rem;
+    }
+    &.limit {
+        @include Background($sprite:'ico-limit', $size:100% auto, $position:center center);
+        width: 0.9rem;
+        height: 0.9rem;
+    }
+    &.hotsale {
+        @include Background($sprite:'ico-hotsale', $size:100% auto, $position:center center);
+        width: 0.9rem;
+        height: 0.9rem;
+    }
+    &.popular {
+        @include Background($sprite:'ico-popular', $size:100% auto, $position:center center);
+        width: 0.9rem;
+        height: 0.9rem;
+    }
+    &.prev {
+        @include Background($sprite:'ico-prev', $size:100% auto, $position:center center);
+        width: 0.5rem;
+        height: 1rem;
+    }
+    &.next {
+        @include Background($sprite:'ico-next', $size:100% auto, $position:center center);
+        width: 0.5rem;
+        height: 1rem;
+    }
+    &.next2 {
+        @include Background($sprite:'ico-next02', $size:100% auto, $position:center center);
+        width: 0.5rem;
+        height: 1rem;
+    }
+    &.draw {
+        @include Background($sprite:'ico-draw', $size:100% auto, $position:center center);
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+    &.info {
+        @include Background($sprite:'ico-info', $size:97% auto, $position:center center);
+        width: 1.3rem;
+        height: 1.3rem;
+        &.red {
+            @include Background($sprite:'ico-info-red', $size:97% auto, $position:center center);
+        }
+    }
+    &.info2 {
+        @include Background($sprite:'ico-info2', $size:97% auto, $position:center center);
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+    &.fuelG {
+        @include Background($sprite:'ico-fuel-g', $size:100% auto, $position:center center);
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+    &.fuelG2 {
+        @include Background($sprite:'ico-fuel-g2', $size:100% auto, $position:center center);
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+    &.fuelD {
+        @include Background($sprite:'ico-fuel-d', $size:100% auto, $position:center center);
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+    &.fuelL {
+        @include Background($sprite:'ico-fuel-l02', $size:100% auto, $position:center center);
+        width: 1.6rem;
+        height: 2.2rem;
+    }
+    &.fuelL02 {
+        @include Background($sprite:'ico-fuel-l02', $size:100% auto, $position:center center);
+        width: 1.6rem;
+        height: 2.2rem;
+    }
+    &.fuelH {
+        @include Background($sprite:'ico-fuel-h02', $size:100% auto, $position:center center);
+        width: 2.6rem;
+        height: 2.2rem;
+    }
+    &.fuelH02 {
+        @include Background($sprite:'ico-fuel-h02', $size:100% auto, $position:center center);
+        width: 2.6rem;
+        height: 2.2rem;
+    }
+    &.fuelE {
+        @include Background($sprite:'ico-fuel-e', $size:100% auto, $position:center center);
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+    &.star {
+        @include Background($sprite:'ico-star_off', $size:100% auto, $position:center center);
+        width: 1.2rem;
+        height: 1.2rem;
+        &.active {
+            @include Background($sprite:'ico-star_on', $size:100% auto, $position:center center);
+        }
+    }
+    &.video {
+        @include Background($sprite:'ico-play', $size:100% auto, $position:center center);
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+    &.video02 {
+        @include Background($sprite:'ico-play02', $size:100% auto, $position:center center);
+        width: 4.5rem;
+        height: 4.8rem;
+    }
+    &.heart {
+        @include Background($sprite:'ico-heart', $size:100% auto, $position:center center);
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+    &.heartOn {
+        @include Background($sprite:'ico-heart-on', $size:100% auto, $position:center center);
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+    &.reset {
+        @include Background($sprite:'ico-reset', $size:100% auto, $position:center center);
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+    &.home {
+        @include Background($sprite:'ico-home', $size:90% auto, $position:center center);
+        width: 1.9rem;
+        height: 1.9rem;
+    }
+    &.alarm {
+        @include Background($sprite:'ico-alarm', $size:85% auto, $position:center center);
+        width: 1.9rem;
+        height: 1.9rem;
+    }
+    &.setting {
+        @include Background($sprite:'ico-setting', $size:95% auto, $position:center center);
+        width: 1.9rem;
+        height: 1.9rem;
+    }
+    &.pannelclose {
+        @include Background($sprite:'ico-pannelclose', $size:85% auto, $position:center center);
+        width: 1.9rem;
+        height: 1.9rem;
+    }
+    &.pannel01 {
+        @include Background($sprite:'ico-pannel01', $size:45% auto, $position:center center);
+        width: 2.8rem;
+        height: 2.8rem;
+        border-radius: 100%;
+    }
+    &.pannel02 {
+        @include Background($sprite:'ico-pannel02', $size:45% auto, $position:center center);
+        width: 2.8rem;
+        height: 2.8rem;
+        border-radius: 100%;
+    }
+    &.pannel03 {
+        @include Background($sprite:'ico-pannel03', $size:45% auto, $position:center center);
+        width: 2.8rem;
+        height: 2.8rem;
+        border-radius: 100%;
+    }
+    &.pannel04 {
+        @include Background($sprite:'ico-pannel04', $size:35% auto, $position:center center);
+        width: 2.8rem;
+        height: 2.8rem;
+        border-radius: 100%;
+    }
+    &.pannel05 {
+        @include Background($sprite:'ico-pannel05', $size:45% auto, $position:center center);
+        width: 2.8rem;
+        height: 2.8rem;
+        border-radius: 100%;
+    }
+    &.pannel06 {
+        @include Background($sprite:'ico-pannel06', $size:45% auto, $position:center center);
+        width: 2.8rem;
+        height: 2.8rem;
+        border-radius: 100%;
+    }
+    &.pannel07 {
+        @include Background($sprite:'ico-pannel07', $size:45% auto, $position:center center);
+        width: 2.8rem;
+        height: 2.8rem;
+        border-radius: 100%;
+    }
+    &.speak {
+        @include Background($sprite:'ico-speak', $size:40% auto, $position:center center);
+        width: 2.8rem;
+        height: 2.8rem;
+        border-radius: 100%;
+        border:1px solid #EBEBEB;
+    }
+    &.colors {
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: .4rem;
+    }
+    &.time {
+        @include Background($sprite:'ico-time', $size:100% auto, $position:center center);
+        width: 1rem;
+        height: 1rem;
+    }
+    &.share {
+        @include Background($sprite:'ico-share', $size:100% auto, $position:center center);
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+    &.like {
+        @include Background($sprite:'ico-like-off', $size:100% auto, $position:center center);
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+    &.unlike {
+        @include Background($sprite:'ico-unlike-off', $size:100% auto, $position:center center);
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+    &.reply {
+        @include Background($sprite:'ico-reply', $size:100% auto, $position:center center);
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+    &.share2 {
+        @include Background($sprite:'ico-share2', $size:85% auto, $position:center center);
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+    &.writer {
+        @include Background($sprite:'ico-writer', $size:98% auto, $position:center center);
+        font-size: .9rem;
+        width: 3.4rem;
+        height: 1.6rem;
+        color:#fff;
+        @include Align-middle-left;
+        @include Bold;
+        padding-left:.4rem;
+    }
+    &.nochat {
+        @include Background($sprite:'ico-nochat', $size:100% auto, $position:center center);
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+    &.comment {
+        @include Background($sprite:'ico-comment', $size:95% auto, $position:center center);
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    &.benefit01 {
+        @include Background($sprite:'ico-benefit01', $size:100% auto, $position:center center);
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+    &.benefit02 {
+        @include Background($sprite:'ico-benefit02', $size:100% auto, $position:center center);
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+    &.benefit03 {
+        @include Background($sprite:'ico-benefit03', $size:100% auto, $position:center center);
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+    &.bannerClose {
+        @include Background($sprite:'ico-close02', $size:100% auto, $position:center center);
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+    &.complete {
+        @include Background($sprite:'ico-complete', $size:100% auto, $position:center center);
+        width: 5.2rem;
+        height: 5.2rem;
+    }
+    &.calendar {
+        @include Background($sprite:'ico-calendar', $size:100% auto, $position:center center);
+        width: 1.7rem;
+        height: 2.2rem;
+        @include Position($top: .9rem, $right: 1.3rem);
+    }
+    &.exclamation {
+        @include Background($sprite:'ico-exclamation_mark', $size:100% auto, $position:center center);
+        width: 5.2rem;
+        height: 5.2rem;
+    }
+    &.phone {
+        @include Background($sprite:'ico-phone', $size:100% auto, $position:center center);
+        width: 3rem;
+        height: 4rem;
+    }
+    &.mail {
+        @include Background($sprite:'ico-mail', $size:100% auto, $position:center center);
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    &.cards {
+        @include Background($sprite:'ico-cards', $size:100% auto, $position:center center);
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    &.people01 {
+        @include Background($sprite:'ico-people01', $size:100% auto, $position:center center);
+        width: 6rem;
+        height: 6rem;
+    }
+    &.people02 {
+        @include Background($sprite:'ico-people02', $size:100% auto, $position:center center);
+        width: 6rem;
+        height: 6rem;
+    }
+    &.people03 {
+        @include Background($sprite:'ico-people03', $size:100% auto, $position:center center);
+        width: 6rem;
+        height: 6rem;
+    }
+    &.layerclose {
+        @include Background($sprite:'ico-pannelclose', $size:95% auto, $position:center center);
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+    &.layerclose02 {
+        @include Background($sprite:'ico-pannelclose02', $size:100% auto, $position:center center);
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+    &.layerclose03 {
+        @include Background($sprite:'ico-close03', $size:100% auto, $position:center center);
+        width: 2rem;
+		height: 2rem;
+    }
+    &.magnifier {
+        @include Background($sprite:'ico-magnifier', $size:100% auto, $position:center center);
+        width: 1.7rem;
+        height: 1.4rem;
+    }
+    &.fixedRight01 {
+        @include Background($sprite:'ico-fixedRight01', $size:100% auto, $position:center center);
+        width: 1.1rem;
+        height: 1.5rem;
+    }
+    &.fixedRight001 {
+        @include Background($sprite:'ico-fixedRight001', $size:100% auto, $position:center center);
+        width: 1.3rem;
+        height: 1.5rem;
+    }
+    &.fixedRight02 {
+        @include Background($sprite:'ico-fixedRight02', $size:100% auto, $position:center center);
+        width: 1.3rem;
+        height: 1.5rem;
+    }
+    &.fixedRight03 {
+        @include Background($sprite:'ico-fixedRight03', $size:100% auto, $position:center center);
+        width: 1.3rem;
+        height: 1.5rem;
+    }
+    &.fixedRight04 {
+        @include Background($sprite:'ico-fixedRight04', $size:100% auto, $position:center center);
+        width: 1.4rem;
+        height: 1.5rem;
+    }
+    &.fixedRight004 {
+        @include Background($sprite:'ico-fixedRight004-2', $size:100% auto, $position:center center);
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    &.fixedRight05 {
+        @include Background($sprite:'ico-fixedRight05', $size:100% auto, $position:center center);
+        width: 1.3rem;
+        height: 1.5rem;
+    }
+    &.lpoint {
+        @include Background($sprite:'ico-lpoint', $size:100% auto, $position:center center);
+        width: 3.6rem;
+        height: 4rem;
+    }
+    &.lpointFriend {
+        @include Background($sprite:'ico-lpoint-friend', $size:100% auto, $position:center center);
+        width: 3.4rem;
+        height: 3.6rem;
+    }
+    &.listCircle {
+        @include Background($sprite:'ico-circle', $size:100% auto, $position:center center);
+        width: 2px;
+        height: 2px;
+    }
+    &.small {
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 100%;
+        @include Align-middle;
+        @include Bold;
+        font-size: 1rem;
+        color:#fff;
+        &.red {
+            background-color: #F04040;
+        }
+        &.blue {
+            background-color: #188CFF;
+        }
+        &.green {
+            background-color: #61C468;
+        }
+        &.mint {
+            background-color: #2CB7C3;
+        }
+    }
+    &.plus {
+        @include Background($sprite:'ico-plus', $size:100% auto, $position:center center);
+        width: .9rem;
+        height: .9rem;
+    }
+    &.enrollment {
+        @include Background($sprite:'ico-plus', $size:100% auto, $position:center center);
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+    &.remove {
+        @include Background($sprite:'ico-pannelclose', $size:100% auto, $position:center center);
+        width: .9rem;
+        height: .9rem;
+    }
+    &.loading-next {
+        @include Background($sprite:'ico-loading-next', $size:100% auto, $position:center center);
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+    &.loading-progress {
+        @include Background($sprite:'ico-loading-progress', $size:100% auto, $position:center center);
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+    &.app01 {
+        @include Background($sprite:'ico-app01', $size:100% auto, $position:center center);
+        width: 4.7rem;
+		height: 4.7rem;
+    }
+    &.app02 {
+        @include Background($sprite:'ico-app02', $size:100% auto, $position:center center);
+        width: 4.7rem;
+		height: 4.7rem;
+    }
+    &.app03 {
+        @include Background($sprite:'ico-app03', $size:100% auto, $position:center center);
+        width: 4.7rem;
+		height: 4.7rem;
+    }
+    &.app04 {
+        @include Background($sprite:'ico-app04', $size:100% auto, $position:center center);
+        width: 4.7rem;
+		height: 4.7rem;
+    }
+    &.noresult {
+        @include Background($sprite:'ico-noresult', $size:100% auto, $position:center center);
+        width: 2.6rem;
+		height: 2.6rem;
+    }
+    &.kakaofaq {
+        @include Background($sprite:'ico-kakao-faq', $size:100% auto, $position:center center);
+        width: 1.7rem;
+		height: 1.7rem;
+    }
+    &.consulting {
+        @include Background($sprite:'ico-consulting', $size:100% auto, $position:center center);
+        width: 9rem;
+		height: 4.1rem;
+    }
+    
+    &.nolist {
+        @include Background($sprite:'icon_nodoc', $size:100% auto, $position:center center);
+        width: 2.1rem;
+		height: 2.6rem;
+    }
+    &.change {
+        @include Background($sprite:'ico-change', $size:100% auto, $position:center center);
+        width: 1rem;
+		height: 1rem;
+    }
+    &.service {
+        @include Background($sprite:'ico-service', $size:100% auto, $position:center center);
+        width: 1.2rem;
+		height: 1.2rem;
+    }
+    &.mypageLink01 {
+        @include Background($sprite:'ico-mypage-link01', $size:100% auto, $position:center center);
+        width: 5.5rem;
+		height: 5.5rem;
+    }
+    &.mypageLink02 {
+        @include Background($sprite:'ico-mypage-link02', $size:100% auto, $position:center center);
+        width: 6rem;
+		height: 6rem;
+    }
+    &.viewAll {
+        @include Background($sprite:'ico-viewAll', $size:100% auto, $position:center center);
+        width: 0.8rem;
+        height: 1.4rem;
+    }
+    &.goEstimate {
+        @include Background($sprite:'ico-goEstimate', $size:100% auto, $position:center center);
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+    &.goVs {
+        @include Background($sprite:'ico-goVs', $size:100% auto, $position:center center);
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+    &.camping {
+        @include Background($sprite:'ico-camping', $size:100% auto, $position:center center);
+        width: 3.6rem;
+        height: 3.6rem;
+    }
+    &.logoC {
+        @include Background($sprite:'ico-logoC', $size:100% auto, $position:center center);
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+    &.nocoupon {
+        @include Background($sprite:'ico-nocoupon', $size:100% auto, $position:center center);
+        width: 3.6rem;
+		height: 3.6rem;
+    }
+    &.delete {
+        @include Background($sprite:'ico-delete', $size:100% auto, $position:center center);
+        width: 1.1rem;
+		height: 1.1rem;
+    }
+    &.add {
+        @include Background($sprite:'ico-add', $size:100% auto, $position:center center);
+        width: 1.4rem;
+		height: 1.4rem;
+    }
+    &.remove {
+        @include Background($sprite:'ico-remove', $size:100% auto, $position:center center);
+        width: 1.4rem;
+		height: 1.4rem;
+    }
+    &.noestimate {
+        @include Background($sprite:'ico-noestimate', $size:100% auto, $position:center center);
+        width: 2.1rem;
+		height: 2.6rem;
+    }
+    &.noattention {
+        @include Background($sprite:'ico-noattention', $size:100% auto, $position:center center);
+        width: 2.8rem;
+		height: 2.8rem;
+    }
+    &.shareKakao {
+        @include Background($sprite:'ico-share-kakao', $size:100% auto, $position:center center);
+        width: 4.2rem;
+		height: 4.2rem;
+    }
+    &.shareBand {
+        @include Background($sprite:'ico-share-band', $size:100% auto, $position:center center);
+        width: 4.2rem;
+		height: 4.2rem;
+    }
+    &.shareStory {
+        @include Background($sprite:'ico-share-story', $size:100% auto, $position:center center);
+        width: 4.2rem;
+		height: 4.2rem;
+    }
+    &.shareFacebook {
+        @include Background($sprite:'ico-share-facebook', $size:100% auto, $position:center center);
+        width: 4.2rem;
+		height: 4.2rem;
+    }
+    &.shareUrl {
+        @include Background($sprite:'ico-share-url', $size:100% auto, $position:center center);
+        width: 4.2rem;
+		height: 4.2rem;
+    }
+    &.shareSms {
+        @include Background($sprite:'ico-share-sms', $size:100% auto, $position:center center);
+        width: 4.2rem;
+		height: 4.2rem;
+    }
+    &.shareMail {
+        @include Background($sprite:'ico-share-mail', $size:100% auto, $position:center center);
+        width: 4.2rem;
+		height: 4.2rem;
+    }
+    &.reservation {
+        @include Background($sprite:'ico-reservation', $size:100% auto, $position:center center);
+        width: 1rem;
+        height: 0.9rem;
+    }
+    &.association {
+        @include Background($sprite:'ico-association', $size:100% auto, $position:center center);
+        width: 1rem;
+        height: 0.9rem;
+    }
+    &.crown {
+        @include Background($sprite:'ioc-crown', $size:100% auto, $position:center center);
+        width: 1.3rem;
+        height: 0.9rem;
+    }
+    &.carSelect1 {
+        @include Background($sprite:'ico-car-select1', $size:100% auto, $position:center center);
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+    &.carSelect2 {
+        @include Background($sprite:'ico-car-select2', $size:100% auto, $position:center center);
+        width: 4.5rem;
+        height: 2.6rem;
+    }
+    &.pick {
+        @include Background($sprite:'ico-pick', $size:100% auto, $position:center center);
+        width: 3.2rem;
+        height: 1.3rem;
+    }
+    &.youtube-play {
+        @include Background($sprite:'ico-youtube', $size:100% auto, $position:center center);
+        width: 5rem;
+        height: 3.4rem;
+    }
+    &.coupon {
+        @include Background($sprite:'ico-coupon', $size:100% auto, $position:center center);
+        width: 1.6rem;
+        height: 1.6rem;
+        position: relative;
+        em {
+            @include Position($top: -.5rem, $right: -.7rem);
+            @include Align-middle;
+            border-radius: 100%;
+            width: 1.35rem;
+            height: 1.35rem;
+            font-size: .9rem;
+            background-color: #F04040;
+            color: #fff;
+        }
+    }
+    &.saving {
+        @include Background($sprite:'ico-saving', $size:100% auto, $position:center center);
+        width: 5.5rem;
+        height: 5.6rem;
+    }
+    &.nocar {
+        @include Background($sprite:'ico-nocar', $size:100% auto, $position:center center);
+        width: 3.3rem;
+		height: 3rem;
+    }
+    &.appInstallclose {
+        @include Background($sprite:'ico-appInstall-close', $size:100% auto, $position:center center);
+        width: 1rem;
+		height: 1rem;
+    }
+    &.contractDown {
+        @include Background($sprite:'ico-contractDown', $size:100% auto, $position:center center);
+        width: 1.1rem;
+		height: 1.1rem;
+    }
+    &.appAccessLogo {
+        @include Background($sprite:'ico-appAccessLogo', $size:100% auto, $position:center center);
+        width: 2.6rem;
+		height: 2.6rem;
+    }
+    &.appAccessPhone {
+        @include Background($sprite:'ico-appAccessPhone', $size:100% auto, $position:center center);
+        width: 3.4rem;
+		height: 3.4rem;
+    }
+    &.appAccessCamera {
+        @include Background($sprite:'ico-appAccessCamera', $size:100% auto, $position:center center);
+        width: 3.4rem;
+		height: 3.4rem;
+    }
+
+}
+
+//캐스케이드
+button.active .like{
+    @include Background($sprite:'ico-like-on', $size:100% auto, $position:center center);
+}
+
+button.active .unlike{
+    @include Background($sprite:'ico-unlike-on', $size:100% auto, $position:center center);
+}
+
+.active .heart {
+    @include Background($sprite:'ico-heart-on', $size:100% auto, $position:center center);
+}
+
+
+.flag {
+    height: 1.6rem;
+    border-radius: 1rem;
+    padding: 0 .5rem;
+    font-size: .9rem;
+    box-sizing: border-box;
+    @include Inline-align-middle;
+    @include Normal;
+    &.best {
+        border: 1px solid #25C1D6;
+        color: #25C1D6;
+        margin-left: .4rem;
+        @include Bold;
+    }
+    &.low {
+        border: 1px solid #9198FF;
+        color: #9198FF;
+        margin-left: .4rem;
+        @include Bold;
+    }
+    &.hot {
+        border: 1px solid #20BBC4;
+        color: #20BBC4;
+        @include Bold;
+    }
+    &.think {
+        border: 1px solid #D478F7;
+        color: #D478F7;
+        @include Bold;
+    }
+    &.battle {
+        border: 1px solid #5599F5;
+        color: #5599F5;
+        @include Bold;
+    }
+    &.tv {
+        border: 1px solid #FD860F;
+        color: #FD860F;
+        @include Bold;
+    }
+    &.magazine {
+        border: 1px solid #63A74F;
+        color: #63A74F;
+        @include Bold;
+    }
+    &.pay {
+        @include Background($sprite:'ico-pay', $size:100% auto, $position:center center);
+        width: 1.1rem;
+        height: 1.1rem;
+        @include Hide_txt;
+    }
+    &.notice {
+        border: 1px solid #8388F7;
+        color: #8388F7;
+        @include Bold;
+    }
+    &.fast {
+        @include Position($top: .5rem, $left: .5rem);
+        @include Bold;
+        font-size: 1rem;
+        color: #fff;
+        height: 1.7rem;
+        border-radius: 1rem;
+        padding: 0 .7rem;
+        background-color:#406FF0;
+        z-index: 1;
+        i {margin-right: .5rem;}
+    }
+    &.pro {
+        @include Position($top: .5rem, $left: .5rem);
+        @include Bold;
+        font-size: 1rem;
+        color: #fff;
+        height: 1.7rem;
+        border-radius: 1rem;
+        padding: 0 .7rem;
+        background-color:#02B174;
+        z-index: 1;
+        i {margin-right: .5rem;}
+    }
+    &.limit {
+        @include Position($top: .5rem, $left: .5rem);
+        @include Bold;
+        font-size: 1rem;
+        color: #fff;
+        height: 1.7rem;
+        border-radius: 1rem;
+        padding: 0 .7rem;
+        background-color:#00B2C9;
+        z-index: 1;
+        i {margin-right: .5rem;}
+    }
+    &.hotsale {
+        @include Position($top: .5rem, $left: .5rem);
+        @include Bold;
+        font-size: 1rem;
+        color: #fff;
+        height: 1.7rem;
+        border-radius: 1rem;
+        padding: 0 .7rem;
+        background-color:#7C49FC;
+        z-index: 1;
+        i {margin-right: .5rem;}
+    }
+    &.popular {
+        @include Position($top: .5rem, $left: .5rem);
+        @include Bold;
+        font-size: 1rem;
+        color: #fff;
+        height: 1.7rem;
+        border-radius: 1rem;
+        padding: 0 .7rem;
+        background-color:#FF4C88;
+        z-index: 1;
+        i {margin-right: .5rem;}
+    }
+    &.time {
+        @include Position($top:0, $left: 1.3rem);
+        font-size:0;
+        background-color: #F04040;
+        height: 2.6rem;
+        border-radius: 0 0 1rem 1rem;
+        padding: 0 1rem;
+        z-index: 2;
+        i {margin-right: .5rem;}
+        p{
+            @include Vertical-inline;
+            @include Bold;
+            font-size:1rem;
+            color:#fff;
+        }
+    }
+    &.reservation {
+        @include Position($top: .5rem, $left: .5rem);
+        @include Bold;
+        font-size: 1rem;
+        color: #fff;
+        height: 1.7rem;
+        border-radius: 1rem;
+        padding: 0 .7rem;
+        background-color:#FC7B03;
+        i {margin-right: .5rem;}
+    }
+    &.association {
+        @include Position($top: .5rem, $left: .5rem);
+        @include Bold;
+        font-size: 1rem;
+        color: #fff;
+        height: 1.7rem;
+        border-radius: 1rem;
+        padding: 0 .7rem;
+        background-color:#FF61C5;
+        i {margin-right: .5rem;}
+    }
+    &.crown {
+        @include Position($top: .5rem, $left: .5rem);
+        @include Bold;
+        font-size: 1rem;
+        color: #fff;
+        height: 1.7rem;
+        border-radius: 1rem;
+        padding: 0 .7rem;
+        background-color:#6E53FF;
+        i {margin-right: .3rem;}
+    }
+    &.circle {
+        @include Position($bottom: -2.4rem, $right: 1.3rem);
+        @include Bold;
+        @include Align-middle;
+        border-radius: 100%;
+        line-height: 1.3;
+        font-size:1rem;
+        height: 4.8rem;
+        width: 4.8rem;
+        color:#fff;
+        background-color: #F04040;
+        z-index: 2;
+        &.off {
+            background-color: #B4B8BF;
+        }
+    }
+    &.num {
+        @include Position($top: 0, $left: 0);
+        background-color: #1E1E1E;
+        color: #fff;
+        height: 1.7rem;
+        width: 1.7rem;
+        padding:0;
+        border-radius: 0 0 .8rem 0;
+        @include Bold;
+    }
+    &.logo {
+        @include Position($top: .5rem, $right: .5rem);
+        @include Align-middle;
+        width: 2rem;
+        height: 2rem;
+        padding:0;
+        z-index: 1;
+        img {
+            //mix-blend-mode: multiply;
+        }
+    }
+    &.complete {
+        border: 1px solid #20BBC4;
+        color: #20BBC4;
+        height: 2rem;
+        font-size: 1rem;
+        padding:0 1rem;
+        @include Bold;
+    }
+    &.new-fill {
+        background-color: #00CCE8;
+        color: #fff;
+        @include Bold;
+        margin-right: .4rem;
+    }
+    &.hot-fill {
+        background-color: #C489FF;
+        color: #fff;
+        @include Bold;
+        margin-right: .4rem;
+    }
+    &.time-fill {
+        background-color: #937F7A;
+        color: #fff;
+        height: 2rem;
+        font-size: 1rem;
+        letter-spacing: .1rem;
+        padding: 0 1.1rem;
+        @include Bold;
+    }
+    &.dDay {
+        border: 1px solid #F04040;
+        color: #F04040;
+        height: 1.4rem;
+        font-size: .9rem;
+        padding:0 .6rem;
+        line-height: 0;
+        @include Bold;
+        &.fill {
+            color:#fff;
+            background-color:#F04040;
+            height: 2rem;
+            font-size: 1rem;
+        }
+    }
+}
+
+.flag-wrap {
+    @include Position($top: .5rem, $left: .5rem);
+    z-index: 2;
+    .flag{
+        @include Position($position:static);
+        @include Align-middle;
+        margin-bottom:.4rem;
+    }
+}
+.flag-bottom-wrap {
+    @include Position($bottom: -.85rem, $left: 1.3rem);
+    font-size: 0;
+    z-index: 2;
+    .flag{
+        @include Position($position:static);
+        margin-right:.6rem;
+    }
+}
+
+.flag-inline-wrap {
+    font-size: 0;
+    .flag {
+        margin-right: .4rem;
+        position: static;
+        vertical-align: middle;
+    }
+}

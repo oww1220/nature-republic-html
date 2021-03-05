@@ -1,0 +1,703 @@
+.direct-wrap {
+    background-color: #EFF2F7;
+    padding-bottom: 8rem;
+    .section-intro {
+        .section-top-banner {
+            position: relative;
+            height:13rem;
+            padding-left:1.7rem;
+            margin-bottom:.85rem;
+            @include Background($sprite:'direct-bg-section-top', $size:100%, $position:center center, $path:'bgs');
+            @include Align-box;
+            justify-content: center;
+            flex-flow: column;
+            &::before {
+                @include Background($sprite:'bg-shin4', $size:100%, $position:center center, $path:'bgs');
+                @include Position($bottom: 0, $right: 0);
+                content:'';
+                width:10.2rem;
+                height:11.7rem;
+            }
+            strong {
+                color:#fff;
+                @include Bold;
+                font-size:1.6rem;
+                line-height: 1.3;
+                margin-bottom:.8rem;
+            }
+            p {
+                color:#fff;
+                font-size:1.05rem;
+                line-height: 1.2;
+
+
+            }
+        }
+        .section-card {
+            background-color: #fff;
+            border-radius: 1.5rem;
+            margin-bottom:.85rem;
+            padding:3.4rem 0;
+            h2 {
+                @include Bold;
+                font-size:1.6rem;
+                b {
+                    color:#999;
+                    @include Bold;
+                    font-size:1.6rem;
+                    padding-right:.85rem;
+                }
+            }
+            .card-wrap {
+                padding:0 1.7rem;
+                > div {
+                    margin-top:2.6rem;
+                }
+            }
+            &.direct-card01 {
+                .direct-intro {
+                    .direct-summary {
+                        margin-bottom:1.7rem;
+                        li {
+                            background-color: #FAFAFA;
+                            @include Align-middle-left;
+                            border-radius:100px;
+                            padding:0 2.6rem;
+                            height:7rem;
+                            & + li {
+                                margin-top:.85rem;
+                            }
+                            .cover {
+                                width:6rem;
+                                text-align:center;
+                                img {
+                                    height:2.6rem;
+                                    width: auto;
+                                }
+                            }
+                            .text {
+                                margin-left:1.7rem;
+                            }
+                        }
+                    }
+                }
+                .direct-advertising {
+                    padding-top:2.6rem;
+                    .cover {
+                        position: relative;
+                        @include Align-middle;
+                        &::before {
+                            content:'';
+                            @include Background($sprite:'ico-play', $size:100%, $position:center center);
+                            width:5.8rem;
+                            height:6rem;
+                            position:absolute;
+                        }
+                        .text {
+                            width:100%;
+                            @include Position($bottom:1.7rem);
+                            @include Align-middle;
+                            .logo {
+                                width: 2.8rem;
+                                height: 2.8rem;
+                            }
+                            span {
+                                color:#fff;
+                                @include Bold;
+                                @include Ellipsis($w:280px, $lines:1); 
+                                font-size:1.4rem;
+                                margin-left:1.5rem;
+                            }
+                        }
+                    }
+                }
+                .service-intro {
+                    li {
+                        & + li {
+                            margin-top:1.7rem;
+                        }
+                        h3 {
+                            @include Bold;
+                            font-size:1.35rem;
+                            padding-bottom:.5rem;
+                        }
+                        p { 
+                            margin-bottom:1rem;
+                            b {
+                                color:#ff0044;
+                            }
+                        }
+                        span {
+                            display: block;
+                        }
+                        
+                    }
+                }
+            }
+            &.direct-card02 {
+                .intro-list01 {
+                    .text {
+                        margin-bottom: 1.7rem;
+                        strong {
+                            color: #ff0044;
+                            @include Bold;
+                        }
+                    }
+                }
+                .cost-wrap {
+                    padding:2.6rem 0;
+                    background-color: #F9FAFC;
+                    .cost-box {
+                        @include Align-bottom-middle;
+                        margin-bottom: 1.7rem;
+                        position: relative;
+                        margin:0 auto 1.3rem;
+                        width:21.7rem;
+                        .cost-cont { 
+                            > div {
+                                @include Align-middle-column;
+                                background-color: #207DC4;
+                                text-align:center;
+                                width:10rem;
+                                height:7rem;
+                                &:first-child {
+                                    border-radius:1rem 1rem 0 0;
+                                }
+                                &:nth-child(2) {
+                                    height:8.1rem;
+                                }
+                                &:last-child {
+                                    background-color: #20BBC4;
+                                    border-radius:0 0 1rem 1rem;
+                                    height:7rem;
+                                }
+                                strong {
+                                    color: #fff;
+                                    font-size:1.05rem;
+                                    line-height:1.5;
+                                    display: block;
+                                }
+                                b {
+                                    color: #fff;
+                                    font-size:1.05rem;
+                                    @include Bold;
+                                    line-height:1.3;
+                                }
+                                & + div {
+                                    margin-top : .2rem;
+                                }
+                            }
+                            & + div {
+                                margin-left: 1.7rem;
+                                > div {
+                                    &:first-child {
+                                        background-color:#595FCE;
+                                        height:7.8rem;
+                                        border-radius:1rem 1rem 0 0;
+                                    }
+                                    &:nth-child(2) {
+                                        height:3.9rem;
+                                    }
+                                    &:last-child {
+                                        height:7rem;
+                                    }
+                                }
+                            }
+                        }
+                        > strong {
+                            color:#ff0044;
+                            font-size:1.05rem;
+                            text-align:center;
+                            z-index: 2;
+                            width:10rem;
+                            height:3.3rem;
+                            @include Bold;
+                            @include Position($top: 0, $right: 0);
+                            &::before {
+                                content:'';
+                                display: block;
+                                @include Background($sprite:'bg-tootip', $size:100% 100%, $position:center center, $path:'bgs');
+                                width:10rem;
+                                height:3.3rem;
+                                margin-bottom:-2.4rem;
+                            }
+                        }
+                    }
+                    .cost-descri {
+                        ul {
+                            @include Align-middle;
+                            li {
+                                & + li {
+                                    margin-left:1.3rem;
+                                }
+                                &:before {
+                                    content: '';
+                                    background-color:#20BBC4;
+                                    width:1.05rem;
+                                    height:1.05rem;
+                                    display: inline-block;
+                                    border-radius: 100%;
+                                    margin-right:.4rem;
+                                }
+                                & + li {
+                                    &::before {
+                                        background-color: #207DC4;
+                                    }
+                                }
+                                &:last-child {
+                                    &::before {
+                                        background-color: #595FCE;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .cost-text {
+                    margin-top:.85rem;
+                    p {
+                        text-align: center;
+                        color:#999;
+                        font-size:1.05rem;
+                    }
+                }
+                .service-list01 {
+                    position: relative;
+                    &::before {
+                        @include Background($sprite:'bg-shin5', $size:85%, $position:right bottom, $path:'bgs');
+                        @include Position($bottom: 0, $right: 0);
+                        content:'';
+                        width:19.6rem;
+                        height:34rem;
+                    }
+                    ul {
+                        margin-right:10rem;
+                        li {
+                            background-color: #F9FAFC;
+                            padding:1rem;
+                            border-radius:1.5rem;
+                            & + li {
+                                margin-top:1rem;
+                            }
+                            strong {
+                                @include Bold;
+                                font-size:1.1rem;
+                                b {
+                                    color:#ff0044;
+                                    font-size:1.1rem;
+                                }
+                            }
+    
+                        }
+                    }
+                    
+                }
+            }
+            &.direct-card03 {
+                .step-box {
+                    position: relative;
+                    .swiper-wrapper {
+                        margin-bottom:.85rem;
+                        .swiper-slide {
+                            background-color: #FAFAFA;
+                            border-radius: 1.5rem;
+                            padding:1.7rem 0;
+                            a {
+                                @include Align-middle-column;
+                                .tit {
+                                    @include Bold;
+                                    display: block;
+                                    padding:.6rem 1.3rem;
+                                    font-size:1.05rem;
+                                    background-color: #fff;
+                                    border-radius: 25px;
+                                    box-shadow :.2rem .2rem .8rem rgba(0,0,0,.1);
+                                }
+                                .cover {
+                                    margin:1.7rem 0 1.3rem;
+                                }
+                                .text {
+                                    text-align:center;
+                                    strong { 
+                                        line-height:1.5;
+                                        b {
+                                            color:#ff0044;
+                                        }
+                                    }
+                                    p {
+                                        color:#999;
+                                        font-size:1.05rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .swiper-button-prev {
+                        @include Position($top:40%, $left:1.3rem);
+                        z-index: 5;
+                    }
+                    .swiper-button-next {
+                        @include Position($top:40%, $right:1.3rem);
+                        z-index: 5;
+                    }
+                }
+                .service-list02 {
+                    .swiper-container {
+                        position: relative;
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                text-align:center;
+                                a {
+                                    display:block;
+                                    .cover {
+                                        background-color:#F9FAFC;
+                                        border-radius:1.5rem;
+                                        .step {
+                                            padding:2.1rem 0;
+                                            strong {
+                                                background: #fff;
+                                                border-radius: 25px;
+                                                display: inline-block;
+                                                padding: 7px 0;
+                                                width: 72px;
+                                                @include Bold;
+                                                box-shadow: 1px 1px 15px #ebebeb;
+                                            }
+                                            p {
+                                                @include Bold;
+                                                padding:1rem 0 0;
+                                                font-size:1.2rem;
+                                            }
+                                        }
+                                    }
+                                    .text {
+                                        p {
+                                            color:#999;
+                                            padding-top:1rem;
+                                            line-height:1.5;
+    
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .swiper-button-next{
+                            @include Position($top: 35%, $right: 0);
+                        }
+                        .swiper-button-prev{
+                            @include Position($top: 35%, $left: 0);
+                        }
+
+                    }
+                    .service-btn {
+                        text-align: center;
+                        margin-top:1.7rem;
+                        button {
+                            width:100%;
+                            height: 4.1rem;
+                            background-color: #333;
+                            color: #fff;
+                            @include Bold;
+                            border-radius: 1rem;
+                            font-size:1.2rem;
+                        }
+                    }
+                    
+                    
+                }
+            }
+            &.direct-card04 {
+                .more-btn {
+                    margin-top:0;
+                    button {
+                        display: block;
+                        text-align:center;
+                        background-color: #FAFAFA;
+                        border:1px solid #EBEBEB;
+                        border-radius: 15px;
+                        padding:1.05rem 0;
+                        width:100%;
+                        @include Bold;
+                        b {
+                            color:#ff0044;
+                        }
+                    }
+                }
+                .benefit {
+                    border-top:1px solid #EBEBEB;
+                    padding-top:2.6rem;
+                    .tit-box {
+                        strong {
+                            @include Bold;
+                            display: inline-block;
+                            padding:.6rem 1.3rem;
+                            font-size:.95rem;
+                            background-color: #fff;
+                            border-radius: 25px;
+                            border:1px solid #000;
+                        }
+                        span {
+                            @include Bold;
+                            font-size:1.35rem;
+                            margin-left:.8rem;
+                        }
+                    }
+                    .cont {
+                        @include Align-middle;
+                        justify-content: left;
+                        margin:1.7rem 0;
+                        .cover {
+                            background-color: #EFF2F7;
+                            min-width:80px;
+                            height:80px;
+                            border-radius: 100%;
+                            @include Align-middle;
+                            img {
+                                width:50%;
+                            }
+                        }
+                        .text {
+                            margin-left:1.3rem;
+                            li {
+                                line-height: 1.5;
+                                padding-left:1rem;
+                                text-indent:-.6rem;
+                                &::before {
+                                    content:'';
+                                    display:inline-block;
+                                    width:.2rem;
+                                    height:.2rem;
+                                    background-color: #000;
+                                    border-radius:50px;
+                                    margin-right:.4rem;
+                                    vertical-align: middle;
+                                }
+                                b {
+                                    color:#ff0044;
+                                }
+                                span {
+                                    color:#999;
+                                }
+                            }
+                        }
+                    }
+                    .swiper-pagination-wrap {
+                        margin:1rem 0;
+                    }
+                }
+                .service-list03 {
+                    li {
+                        background-color: #F9FAFC;
+                        border-radius:1.5rem;
+                        padding:2.1rem 1.8rem;
+                        text-align: center;
+                        .step {
+                            padding-bottom:2.1rem;
+                            strong {
+                                font-size:1.1rem;
+                                @include Bold;
+                            }
+                            p {
+                                padding-top:.7rem;
+                                font-size:1.1rem;
+                            }
+                        }
+                        .cover {
+                            width:190px;
+                            height:152px;
+                            margin:0 auto;
+                        }
+                        & + li {
+                            margin-top:1rem;
+                        }
+                    }
+                }
+            }
+            &.direct-card05 {
+                .direct-faq { 
+                    ul {
+                        border-top: 1px solid #EBEBEB;
+                        > li {
+                            border-bottom: 1px solid #EBEBEB;
+                        }
+                    }
+                    .direct-toggle-btn {
+                        cursor: pointer;
+                        .direct-toggle-tit {
+                            @include Align-between-top;
+                            padding: 1.3rem 0;
+                            line-height: 1.4;
+                        }
+                        &.active {
+                            .direct-toggle-tit {
+                                @include Bold;
+                            }
+                            .btn-toggle:after {
+                                transform: rotate(180deg);
+                            }
+                        }
+                    }
+        
+                    .direct-toggle-cont {
+                        display: none;
+                        border-top: 1px solid #EBEBEB;
+                        background-color: #FAFAFA;
+                        padding: 1.3rem ;
+                        .direct-toggle-txt {
+                            line-height: 1.4;
+                            > div {
+                                margin-bottom:1.7rem;
+                                strong {
+                                    @include Bold;
+                                    display: block;
+                                    line-height:1.5;
+                                }
+                                b {
+                                    @include Bold;
+                                    display: block;
+                                    color:#20BBC4;
+                                    line-height:1.5;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .section-guide {
+            padding:2.6rem 1.7rem 0;
+        }
+        .section-btn {
+            margin:1.7rem 1.7rem 0;
+            background-color:#2B2B2B;
+            border-radius: 15px;
+            text-align:center;
+            button {
+                width:100%;
+                color:#fff;
+                @include Bold;
+                padding:0;
+            }
+        }
+    }
+
+    .direct-information {
+        .information-top {
+            @include Position($position:sticky, $top: 0, $left: 0);
+        }
+        .information-cont {
+            background-color: #EFF2F7;
+            overflow: hidden;
+            position: relative;
+            border-radius: 1.5rem 1.5rem 0 0;
+            z-index: 1;
+            margin-top: -2.6rem;
+            .item-cols {
+                padding: 2.05rem 0 2.6rem;
+                background-color: #fff;
+                border-radius: 1.5rem;
+                & + .item-cols {
+                    margin-top:.9rem;
+                }
+                .direct-infos {
+                    margin:2.6rem 1.7rem 0;
+                    .direct-toggle-btn {
+                        .common-toggle-tit {
+                            padding-right: 2.6rem;
+                            @include Bold;
+                            .btn-toggle {
+                                right: .8rem;
+                            }
+                        }
+                    }
+                    .direct-toggle-cont {
+                        border:0;
+                        background-color: #fff;
+                        padding: 0 0 2.6rem;
+                        .common-toggle-txt {
+                            > p {
+                                font-size: 1rem;
+                            }
+                            .hasmap-wrap {
+                                margin-top: 1.7rem;
+                            }
+                            .toggle-table {
+                                margin-top: .9rem;
+                                margin-left: -1.7rem;
+                                width: calc(100% + 3.4rem);
+                                box-sizing: border-box;
+                                padding: 0 1.7rem;
+                                .t01 {
+                                    width: 1.1rem;
+                                    margin-bottom: .4rem;
+                                }
+                            }
+                            .guide-list {
+                                margin-bottom: 2.6rem;
+                            }
+                        }
+                        
+                    }
+                }
+                .chk-agree-list {
+                    margin: 2.6rem 1.7rem 0;
+                    > ul {
+                        border-top: 1px solid #EBEBEB;
+                        .chk-agree-top .inputNone span {@include Bold;line-height: 1.4;}
+                    }
+                }
+                .btns {
+                    margin: 0 1.7rem;
+                    .btn {
+                        font-size: 1.3rem;
+                        height: 4.7rem;
+                        & + .btn {margin-top:.9rem;}
+                        span {font-size: 1.1rem;}
+                    }
+                }
+                .direct-faq {
+                    margin: 0 1.7rem;
+                    h2 {
+                        font-size: 1.5rem;
+                        @include Bold;
+                    }
+                    .direct-faq-col {
+                        margin-top:2.6rem;
+                        > strong {
+                            @include Bold;
+                            display: block;
+                            margin-bottom: 1rem;
+                        }
+                        .direct-toggle-btn {
+                            .common-toggle-tit {
+                                @include Align-top-left;
+                                padding-right: 2.6rem;
+                                cursor: pointer;
+                                > b {
+                                    line-height: 1.4;
+                                    @include Bold;
+                                    flex:none;
+                                    margin-right: .5rem;
+                                    color:#999;
+                                }
+                                .btn-toggle {
+                                    right: .8rem;
+                                }
+                            }
+                            &.active {
+                                .common-toggle-tit {
+                                    > b {
+                                        color: #F04040;
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+}

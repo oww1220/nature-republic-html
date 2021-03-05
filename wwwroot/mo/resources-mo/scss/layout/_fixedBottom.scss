@@ -1,0 +1,313 @@
+.fixedBottom {
+    @include Position( $position:fixed, $bottom: 0, $left: 0);
+    @include Hide_txt;
+    z-index: 43;
+    width: 100%;
+    height: 7rem;
+    box-sizing: border-box;
+    transform: translate3d(0, 0, 0);
+    transition: transform .2s;
+    .fixedBottom_in {
+        @include Align-between;
+        height: 5.1rem;
+        margin-top:1.9rem;
+        box-sizing: border-box;
+        border-top:1px solid #EBEBEB;
+        background-color: #fff;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        &:after {
+            display: block;
+            content: '';
+            @include Background($sprite:'bg-fixedRight', $size:100% auto, $position:center center, $path:'bgs');
+            width: 13rem;
+            height: 2.8rem;
+            @include Position($top: -.8rem, $left: 50%);
+            margin-left: -6.5rem;
+        }
+        button {
+            @include Align-middle-column;
+            margin:0;
+            span {
+                display: block;
+                font-size:1rem;
+                margin-top:.4rem;
+            }
+        }
+        .left {
+            @include Align-box;
+            flex-basis:calc(50% - 3rem);
+            height: 100%;
+            box-sizing: border-box;
+            padding-top: .5rem;
+            button {
+                flex-basis:50%;
+            }
+        }
+        .center {
+            position: relative;
+            z-index: 1;
+            @include Align-middle;
+            flex-basis:6rem;
+            margin-bottom: 2rem;
+            span {font-size:1rem;}
+        }
+        .right {
+            @include Align-box;
+            flex-basis:calc(50% - 3rem);
+            height: 100%;
+            box-sizing: border-box;
+            padding-top: .5rem;
+            button {
+                flex-basis:50%;
+            }
+        }
+    }
+    .tooltip {
+        @include Position($top: -4.5rem, $left: 50%);
+        background: linear-gradient(to right, #a78af5 1%,#3a7dc9 100%);
+        border-radius: 1.5rem;
+        font-size: 1rem;
+        color:#fff;
+        @include Bold;
+        @include Align-middle;
+        padding: .8rem 1.2rem .8rem 1.7rem;
+        margin-left: -9rem;
+        width: 18rem;
+        height: 2.8rem;
+        box-sizing: border-box;
+        z-index: 1;
+        &:before {
+            display: block;
+            content: '';
+            @include Background($sprite:'ico-arrow5', $size:100% auto, $position:center center);
+            width: .8rem;
+            height: 1.1rem;
+            margin-left: -.4rem;
+            @include Position($bottom: -.7rem, $left: 50%);
+        }
+        &#toast-message-limit {
+            opacity: 0;
+            visibility: hidden;
+            transform: translate3d(0, 115%, 0);
+            transition: opacity .5s, visibility .5s, transform .5s;
+            &.active {
+                opacity: 1;
+                visibility: visible;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+    }
+    &.close {
+        transform: translate3d(0, 115%, 0);
+    }
+    &.active {
+        transform: translate3d(0, 0, 0);
+        &.close {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+}
+
+.toast-message {
+    @include Position( $position:fixed, $bottom: 0, $left:0);
+    @include Bold;
+    @include Align-middle;
+    width: calc(100% - 2rem);
+    height: 4.1rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate3d(0, 115%, 0);
+    transition: opacity .5s, visibility .5s, transform .5s;
+    margin:1rem;
+    border-radius: 1rem;
+    z-index: 42;
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+//견적결과 확인 토스트 메시지
+.toast-message-login {
+    @include Position($top:-4.7rem, $right:0);
+    @include Align-middle;
+    background-color: #fff;
+    margin-left: auto;
+    box-sizing: border-box;
+    width: 71%;
+    border:1px solid #333;
+    border-radius:1rem;
+    height: 5rem;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin:0 2%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s, visibility .5s;
+    b {
+        font-size: 1.1rem;
+    }
+    &:before {
+        display: block;
+        content: '';
+        @include Background($sprite:'ico-arr-toast01', $size:100% auto, $position:center center);
+        width: .8rem;
+        height: 1.1rem;
+        @include Position($bottom: -.8rem, $left: 50%);
+        margin-left: -.55rem;
+    }
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+//대여료 추가할인 토스트 메시지
+.toast-message-sale {
+    @include Position($top:-2.7rem, $right:0);
+    @include Align-middle;
+    background-color: #fff;
+    margin-left: auto;
+    box-sizing: border-box;
+    width: 63%;
+    border:1px solid #333;
+    border-radius:1.5rem;
+    height: 3.2rem;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin:0 2%;
+    @include Bold;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s, visibility .5s;
+    b {
+        font-size: 1.1rem;
+    }
+    &:before {
+        display: block;
+        content: '';
+        @include Background($sprite:'ico-arr-toast01', $size:100% auto, $position:center center);
+        width: .8rem;
+        height: 1.1rem;
+        @include Position($bottom: -.8rem, $right: 3rem);
+    }
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+/* //백업본
+.fixedRight {
+    @include Position( $position:fixed, $bottom: 0, $right: 0);
+    z-index: 41;
+    transition: transform .2s; 
+    padding: 1.7rem;
+    button {
+        display: block;
+        margin-top: .9rem;
+    }
+    &.close-topBt {
+        transform:translate3d(0, 5.5rem, 0) scale(1);
+        .btn-goTop {
+            transform:scale(0);
+            opacity: 0;
+            transition: opacity .2s, transform .2s;
+        }
+    }
+}
+.fixedBottom.close ~ .fixedRight {
+    transform: translate3d(0, 5.5rem, 0);
+}
+
+.fixedBottom ~ .fixedRight,
+.estimateBottom ~ .fixedRight,
+.unit-text-write-wrap ~ .fixedRight{
+    bottom: 5rem;
+}
+*/
+
+
+.fixedRight {
+    @include Position( $position:fixed, $bottom: 0, $right: 0);
+    z-index: 41;
+    transition: transform .2s; 
+    padding: 10px 0;
+    margin: 0 20px;
+    button {
+        display: block;
+        margin-top: 10px;
+        width: 48px;
+        height: 48px;
+    }
+    &.close-topBt {
+        transform:translate3d(0, 60px, 0) !important;
+        .btn-goTop {
+            //transform:scale(0);
+            opacity: 0;
+            transition: opacity .2s, transform .2s;
+        }
+    }
+}
+
+
+
+/*우측바 경우*/
+.fixedRight {
+    bottom:  5.5rem;
+}
+
+.fixedBottom ~ .fixedRight,
+.noFixBottom.fixedRight {
+    bottom: calc( 5.5rem + 58px );
+}
+
+.noLauncher.fixedRight {
+    bottom: 5.5rem;
+}
+
+.noBottomLayer.fixedRight {
+    bottom: 58px;
+}
+
+.noBottomLayer.noLauncher.fixedRight {
+    bottom: 0px;
+}
+
+.noFixBottom {
+    transform: translate3d(0, 0, 0) !important;
+}
+
+.fixedBottom.close ~ .fixedRight {
+    transform: translate3d(0, 5.5rem, 0);
+}
+
+/*톡톡문의 경우*/
+.fixedRight ~ div > iframe#launcher{
+    bottom: 0 !important;
+    z-index: 41 !important;
+    transition: transform .2s; 
+}
+
+.fixedBottom ~ .fixedRight ~ div > iframe#launcher,
+.noFixBottom.fixedRight ~ div > iframe#launcher {
+    bottom: 5.5rem !important;
+}
+
+.noBottomLayer.fixedRight ~ div > iframe#launcher {
+    bottom: 0 !important;
+}
+
+.fixedBottom.close ~ .fixedRight ~ div > iframe#launcher{
+    transform: translate3d(0, 5.5rem, 0);
+}
+
+.noFixBottom ~ div > iframe#launcher {
+    transform: translate3d(0, 0, 0) !important;
+}

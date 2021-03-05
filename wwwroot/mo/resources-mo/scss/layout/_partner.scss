@@ -1,0 +1,472 @@
+/* HEADER */
+.partner-header {
+	.gnb_view {top: 21px;}
+	.gnb_view a:first-child {width: 26px; margin-right: 25px;}
+	.gnb_view a:last-child {width: 30px;}
+
+	.gnb_view {display: block; position: absolute; top: 20px; right: 0;}
+	.gnb_view a {display: inline-block;}
+	.gnb_view a:first-child {width: 26px; margin-right: 25px;}
+	.gnb_view a:last-child {width: 30px;}
+	.gnb_view a img {width: 100%;}
+
+	#totalview {display: block; position:fixed; height: 100%; z-index: 70; background:#fff; right:0; top:0; box-shadow:0 -3px 10px #333; transition:all 0.5s ease-out;}
+#totalview .gnb_top {height: 80px; padding: 0 70px 0 30px; background-color: #f04040; line-height: 80px; box-sizing: border-box;}
+#totalview .gnb_top h2 {display: inline-block; padding: 0 0 20px 15px; color: #fff; font-size: 18px;}
+#totalview .gnb_bt {position: absolute; top: 0; right: 20px;}
+#totalview .gnb_bt a {display: inline-block; width: 30px;}
+#totalview .gnb_bt a img {width: 100%;}
+#totalview .gnb_toplist {height: 100%;}
+#totalview .gnb_toplist p {display: inline-block; font-size: 16px; color: #fff;}
+#totalview .gnb_toplist p b {padding-right: 2px; font-size: 22px;}
+#totalview .gnb_toplist a {display: inline-block; float: right; width: 100px; height: 32px; margin-top: 24px; border: 1px solid #fff; font-size: 16px; color: #fff; line-height: 32px; text-align: center;}
+#totalview.on {display:block;}
+#totalview .closeTotalView{display:block;}
+#totalview .allmenu {width:100%; background-color: #fff;}
+#totalview .allmenu .d1{float:initial;padding:0;border-top:1px solid #efefef;border-bottom:1px solid #e6e6e6;}
+#totalview .allmenu a{display:block;transition:all 0.5s ease-out;}
+#totalview .allmenu .d1>a {width: 100%; padding: 15px 30px; background:url('https://direct.lotterentacar.net/images/partner/common/mb_menu_btm.png') no-repeat right 20px center; font-size: 18px; color: #333; box-sizing: border-box; background-size: 11px;}
+#totalview .allmenu .d1.active>a{border-bottom: 1px solid #e6e6e6; background:url('https://direct.lotterentacar.net/images/partner/common/mb_menu_top.png')no-repeat right 20px center; background-size: 11px;}
+#totalview .allmenu .d1.faq a{background:none;}
+#totalview .gnb_depth {padding: 12px 0; background:#f8f8f8;}
+#totalview .gnb_depth li.on a {color: #f04040;}
+#totalview .gnb_depth li a{color:#888; font-size: 16px; padding: 0 30px; font-weight: 400; line-height: 40px;}
+#totalview .gnb_depth li a:before {content: ''; display: inline-block; width: 10px; height: 1px; margin-right: 8px; background-color: #888; vertical-align: middle;}
+#totalview .gnb_depth li a:hover{font-weight: 600;}
+#totalview .gnb_depth li:last-child a{border-bottom:0;}
+#totalview .gnb_depth{display:none;position:relative;top:0; text-align:left;}
+#totalview .gnb_depth.active{display:block;}
+#totalview .three_depth {padding: 0;}
+#totalview .three_depth li {border-bottom: 1px solid #efefef; background-color: #e4e4e4;}
+#totalview .three_depth li:last-child {border-bottom: none;}
+#totalview .allmenu .out{padding:10px 24px}
+#totalview .allmenu .out .linktxt {margin-left: 5px; border: none;}
+#totalview .allmenu .out dl {margin-bottom: 5px;}
+#totalview .allmenu .out a{display:inline-block; border:1px solid #000;}
+#totalview .allmenu .out a.o1{padding: 6px 10px 3px; border-radius:4px; vertical-align: middle;}
+#totalview .allmenu .out a.o2{padding:7px 5px;border-radius:4px; font-size: 14px;}
+#totalview .allmenu .out a.o3 {padding: 5px 5px 2px; border-radius:4px; vertical-align: middle;}
+#totalview .allmenu .out a.o2:hover{letter-spacing:-.0.45;text-decoration:underline;}
+.gnbTotalBack{position: fixed;top: 0; left: 0; width: 100%; height: 100%; min-height: 983px; background: rgba(0,0,0,0.8);z-index: 50;}
+.breadcrumb {display: none;}
+
+#totalview {width:80%;}
+#totalview .gnb_top {height: 70px; padding: 0 60px 0 20px; line-height: 70px;}
+#totalview .gnb_toplist p b {font-size: 20px;color: #fff;}
+#totalview .gnb_toplist a {width: 80px; height: 28px; margin-top: 20px; line-height: 28px; font-size: 14px;}
+#totalview .gnb_depth {padding: 8px 0;}
+#totalview .gnb_depth li a {padding: 0 20px; font-size: 14px; line-height: 34px;}
+#totalview .gnb_depth li a:before {width: 8px; height: 1px; margin-right: 8px;}
+#totalview .allmenu .d1>a {padding: 14px 20px; font-size: 14px;line-height: 1.4;}
+#totalview .gnb_bt a {width: 22px;}
+
+}
+
+.partner-header {width: 100%; height: 80px; border-bottom: 1px solid #f04040; background-color: #fff; box-sizing: border-box;}
+.partner-header .inner {
+	position: relative;
+	width: 92%;
+    padding: 16px 0;margin: 0 auto;
+    box-sizing: border-box;}
+.partner-header .inner .logo_wrap {position: relative;
+    float: left;
+    top: 0;
+    line-height: 45px;}
+.partner-header .inner .logo_wrap h1 {display: inline-block;}
+/*.partner-header .inner .logo_wrap h1:nth-child(1):after {content: ''; display: inline-block; width: 1px; height: 16px; margin: 0 10px; background-color: #e2e2e2; vertical-align: -webkit-baseline-middle;}*/
+.partner-header .inner .logo_wrap h1:nth-child(1):after {content: ''; display: inline-block; width: 9px; height: 12px; margin: 0 10px; background: url(https://direct.lotterentacar.net/images/partner/common/between.png) no-repeat center; vertical-align: middle;}
+.partner-header .inner .logo_wrap h1 a {display: inline-block;}
+.partner-header .inner .logo_wrap h1 img {width: 100%;}
+.partner-header .inner .logo_wrap h1.logo a {width: 120px; height: 35px;}
+.partner-header .inner .logo_wrap h1.logo_second a {width: 120px; height: 35px;}
+.partner-header nav {float: left; margin-left: 100px;}
+.partner-header nav ul {height: 80px; text-align: center;}
+.partner-header nav li {display: inline-block; line-height: 76px; vertical-align: middle;}
+.partner-header nav .gnblist {position: relative; width: 160px; height: 80px; float: left;}
+.partner-header nav .gnblist>a {width: 160px; height: 80px; font-size: 15px; color: #333; font-weight: 700;}
+.partner-header nav .gnblist>a.on {font-weight: 700; color: #f04040;}
+.partner-header nav .gnblist .bar {display: none;}
+.partner-header nav .gnblist .bar.on {display: block; position: absolute; top: 76px; width: 100%; height: 3px; background-color: #f04040; vertical-align: bottom;}
+.partner-header nav .two_depth {position: relative; height: 170px; margin-top: 4px; text-align: center; line-height: 50px; transition: all .2s ease-in-out; box-sizing: border-box; border-collapse: collapse;}
+.partner-header nav .two_depth li {display: block; height: 45px; line-height: auto;}
+.partner-header nav .two_depth a {display: block; font-size: 14px; color: #666;}
+.partner-header nav .two_depth a:hover {color :#f04040;}
+
+.partner-header .util {float: right; line-height: 80px;}
+.partner-header .util li {display: inline-block; font-size: 12px; color: #888;}
+.partner-header .util li:hover a {font-weight: 700;}
+.partner-header .util li:nth-child(1):after {content: ''; display: inline-block; width: 1px; height: 12px; margin: 0 10px; background-color: #e2e2e2; vertical-align: middle;}
+
+.partner-header {height: 70px;}
+.partner-header .inner {padding: 12px 0;  box-sizing: border-box;}
+.partner-header .inner .logo_wrap h1 {float: left;}
+.partner-header .inner .logo_wrap h1.logo a {width: 100px; height: 35px; line-height: 35px;}
+.partner-header .inner .logo_wrap h1.logo_second a {width: 87px; height: 35px; line-height: 35px;}
+
+
+
+/* LNB */
+.partner-lnb {
+	.sub-tit {position:relative; border-bottom: 1px solid #ddd; z-index: 15; display: -webkit-box; display: -ms-flexbox; display: flex; width: 100%; height: 50px; background-color: #fff;}
+	.sub-tit h2 {width: 100%; font-size: 20px; text-align: center; line-height: 1.4;@include Bold;height: 50px;@include Align-middle;}
+	.sub-tit.absolute {position: absolute;}
+	.sub-tit > a.back_btn {position: absolute; display: block; width: 50px;	height: 100%; left: 0;
+		background: url("https://direct.lotterentacar.net/images/partner/common/sub_header_back_btn.png") no-repeat 15px center; background-size: 10px;}
+	.sub-tit > h2.title {margin: 0 auto; color: #313131; font-size: 18px; line-height: 44px;}
+	.sub-tit > a.share_btn {position: absolute; display: block; width: 15px; height: 100%; right: 15px; background: url("https://direct.lotterentacar.net/images/partner/common/sub_header_share_btn.png") no-repeat center; background-size: contain;}
+}	
+
+/*로그인*/
+.partner-login {
+
+	.logoWrap {margin-bottom: 48px;}
+	.logoWrap h1 {display: inline-block; width: 120px; height: 35px; vertical-align: middle;}
+	.logoWrap em {display: inline-block; width: 9px; height: 12px; margin: 0 10px; background: url(https://direct.lotterentacar.net/images/partner/common/between.png) no-repeat center; vertical-align: middle;}
+	.logoWrap h1 img {display: block; width: 100%;}
+
+	.loading_box {height: 125px;}
+	.login_wrap {}
+	.login_wrap .mb_back {height: 60vw;background-repeat: no-repeat;
+		background-position: top center;
+		background-size: 100%;}
+	.login_wrap .logoWrap {margin-bottom: 15px;}
+	.logoWrap h1 {width: 80px !important; height: 23px;}
+	.login {width: 90%; margin: 0 auto;padding:4.5rem 0; }
+	.login .con_left {width: 100%; left: 0;}
+	.login .con_left .info_wrap {width: 100%;}
+	.login .con_left p {font-size: 14px;}
+	.login .con_left p.tit {font-size: 26px;}
+	.login .con_left .info_wrap {width: 100%; margin-top: 48px;}
+	.login .con_left .info_wrap label {display: block; margin-top: 15px; font-size: 14px; color: #888;}
+	.login .con_left input[type="text"], .login .con_left input[type="password"] {height: 40px; padding: 0 6px; font-size: 14px; line-height: 22px;
+	    width: 100%;border: 0;border-bottom: 1px solid #d4d4d4;}
+	.login .con_left .info_wrap {margin-top: 15px;}
+	.login .con_left .info_wrap label {margin-top: 20px;}
+	.login .con_left .btn_login {display: none;}
+	.login .con_left .member_menu {margin-top:30px;@include Align-middle;}
+	.login .con_left .member_menu li {padding: 0 1.4rem;border-left: 1px solid #888; line-height: 14px; vertical-align: middle; text-align: center;}
+	.login .con_left .member_menu li:first-child {border: 0;}
+	.login .con_left .member_menu li a {font-size: 1.2rem; color: #333;}
+}
+
+/*메인*/
+.partner {
+
+	/*공통*/
+	.pcn {
+		display: block !important;
+	}
+	.mbn {
+		display: none !important;
+	}
+	.clfix:after, .clfix:before {
+		clear: both;
+		display: block;
+		content: '';
+	}
+	.no_promotion {
+		padding-top:.9rem;
+	}
+	.event-wrap {
+		padding-top:.9rem;
+	}
+	
+	.mypage-wrap {
+		padding-top:.9rem;
+		.section-main {
+			.main-infos .main-infos-top {
+				strong {
+					font-size: 1.9rem;
+					b {
+						font-size: 1.9rem;
+					}
+				}
+				> a {
+					font-size: 1.2rem;
+					b {
+						font-size: 1.2rem;
+						margin: 0 .5rem;
+						@include Bold;
+					}
+				}
+			}
+		}
+	}
+
+	/*메인*/
+	#section-1 {
+		.visual {position: relative; height: 100%;}
+		.visu_slide {width: 100%; height: 100%; min-height: 100%;}
+		.visu_slide .slick-list,.visu_slide .slick-track,.visu_slide .slick-slide>div {height: 100% !important;}
+		.visu_slide li {height: 100%;}
+		.bg,.bg a {display: inline-block; width: 100%; height: 100%; min-height: 100%; background-size:100%; background-position: center; background-repeat: no-repeat;}
+		.slick-counter {position: absolute; width: 150px; height: 40px; padding: 0 15px; bottom: 6%; left: 50%; border-radius: 50px; background-color: rgba(0,0,0,0.25); text-align: center; color: #fff; box-sizing: border-box;@include Align-between;margin-left: -75px;}
+		.slick-counter div.control {@include Align-middle;}
+		.slick-counter div.count {float: right; width: 60px; margin-right: 5px; text-align: center;}
+		.slick-counter .control {line-height: 40px;}
+		.slick-counter .control button {z-index: 9998;}
+		.slick-counter .control .prev {width: 8px; height: 14px; background: url(https://direct.lotterentacar.net/images/partner/main/prev.png) no-repeat center;}
+		.slick-counter .control .next {width: 8px; height: 14px; background: url(https://direct.lotterentacar.net/images/partner/main/next.png) no-repeat center;}
+		.slick-counter .control .stop {width: 8px; height: 12px; margin: 0 10px; left: 20%; background: url(https://direct.lotterentacar.net/images/partner/main/stop.png) no-repeat center;}
+		.slick-counter .control .play {display: none; width: 8px; margin: 0 10px; left: 20%; height: 12px; background: url(https://direct.lotterentacar.net/images/partner/main/play.png) no-repeat center;}
+		.slick-counter .count span {font-size: 15px; bottom: 50px; line-height: 42px;}
+		.slick-counter .count span.current {margin-right: 4px; box-sizing: border-box;}
+		.slick-counter .count span.total {margin-left: 4px;}
+		.slide {display: table; table-layout: fixed; position: absolute; top: 0; left: 0; height: 100%; min-height: 100%; overflow: hidden;}
+		.slick-current .img, .slick-current + .slick-slide .img { right: calc(100% - 35rem); }
+		.slick-active .img { right: 0 !important; max-width: calc(100% - 21rem); }
+		.slick-active .more { left: 0; opacity: 1; -webkit-transition: all 0.5s 0.8s; transition: all 0.5s 0.8s; }
+		.slick-active a::before { opacity: 0.2; }
+		.slick-active a h3::before { width: 50%; }
+		.slick-active a strong { top: 0; opacity: 1; }
+		.slick-active a p { opacity: 1; }
+		&.active { top: 0; opacity: 1; -webkit-transition: all 0.5s 1.4s; transition: all 0.5s 1.4s; }
+		.visual {height: 160vw;}
+	}
+
+	#section-2 {
+		background-color: #f04141;
+		.section_wrap {
+			position: relative;
+			margin-top: -4rem;
+			.info {
+				@include Position($top: 0, $left: 0);
+				@include Align-middle-column;
+				width: 100%;
+				height: 100%;
+				z-index: 3;
+				> h1 {
+					text-align: center;
+					color:#fff;
+					font-size: 2.4rem;
+					b {
+						font-size: 2.4rem;
+						@include Bold;
+						color:#fff;
+					}
+				}
+				> p {
+					text-align: center;
+					color:#fff;
+					margin-top:1.7rem;
+					font-size: 1.3rem;
+					line-height: 1.6;
+					em {
+						display: block;
+					}
+				}
+				.btn_area {
+					margin-top:1.4rem;
+					@include Inline-align-middle;
+					a {
+						border:1px solid #fff;
+						background-color: transparent;
+						@include Inline-align-middle;
+						height: 3.8rem;
+						border-radius: 20rem;
+						line-height: 1.3;
+						color: #fff;
+						font-size: 1.3rem;
+						@include Bold;
+						padding:0 1.5rem;
+					}
+				}
+			}
+			.back {
+				.txt_back {
+					position: relative;
+					top: 12rem;
+				}
+				.model_back {
+					position: relative;
+				}
+			}
+		}
+	}
+
+	#section-3 {
+		background-color: #fff;
+		padding: 5rem 0;
+		.info {
+			text-align: center;
+			> h1 {
+				text-align: center;
+				font-size: 2.4rem;
+				line-height: 1.5;
+				b {
+					font-size: 2.4rem;
+					@include Bold;
+				}
+			}
+			> p {
+				margin-top:1.4rem;
+				text-align: center;
+				line-height: 1.4;
+				color: #666;
+				font-size: 1.3rem;
+				em {display: block;}
+			}
+			.btn_area {
+				margin-top:1.4rem;
+				@include Inline-align-middle;
+				a {
+					background-color: #f04040;
+					@include Inline-align-middle;
+					height: 3.8rem;
+					border-radius: 20rem;
+					line-height: 1.3;
+					color: #fff;
+					font-size: 1.3rem;
+					@include Bold;
+					padding:0 1.5rem;
+				}
+			}
+		}
+		.direct_info {
+			ul {
+				li {
+					margin-top:3.4rem;
+					> div {
+						@include Align-middle-column;
+					}
+					.imgwrap {
+						width: 13.5rem;
+						img {
+
+						}
+					}
+					p {
+						@include Bold;
+						font-size: 1.7rem;
+						margin:1.7rem 0 0;
+						text-align: center;
+						em {
+							color: #f04040;
+						}
+						span {
+							display: block;
+						}
+						&.txt {
+							margin:1rem 0 0;
+							@include Normal;
+							font-size: 1.4rem;
+							color: #888;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#section-4 {
+		background-color: #fbfbfb;
+		padding: 5rem 0;
+		.faq {
+			text-align: center;
+			.btn_area {
+				display: none;
+			}
+			h1 {
+				font-size: 3.8rem; 
+				color: #333;
+				@include Bold;
+				line-height: 1;
+			}
+			p {
+				margin-top:.8rem;
+				font-size: 1.3rem; 
+				line-height: 1.4; 
+				color: #333; 
+				word-break: keep-all;
+				margin-bottom: 2.6rem;
+				span {display: block;}
+			}
+		}
+		.faq_area {
+			.slick-track {
+				display: flex;
+			}
+			li {
+				border: 1px solid #e6e6e6; 
+				padding: 2.6rem 1.7rem; 
+				background-color: #fff; 
+				box-sizing: border-box;
+				margin: 0 10px;
+				height: auto;
+				position: relative;
+				.tit {
+					border-bottom: 1px solid #e4e4e4;
+					padding-bottom: 1.2rem;
+					> span {
+						color: #f04040;
+						font-size: 1.3rem;
+						line-height: 1.4;
+						text-align: left;
+						display: block;
+					}
+					> h3 {
+						@include Bold;
+						font-size: 1.4rem;
+						margin-top:.5rem;
+						line-height: 1.4;
+						text-align: left;
+						@include Ellipsis($w:100%, $lines:2);
+						height: 3.85rem;
+					}
+				}
+				> em {
+					display: block;
+					width: 2.2rem;
+					margin-top:1rem;
+				}
+				> p {
+					margin-top:1rem;
+					margin-bottom:2.5rem;
+					a {
+						display: block;
+						@include Ellipsis($w:100%, $lines:4);
+						font-size: 1.2rem;
+						line-height: 1.5;
+						text-align: left;
+						max-height: 7.1rem;
+					}
+				}
+				.date {
+					color: #666;
+					font-size: 1.1rem;
+					@include Position($bottom: 2.6rem, $left: 1.7rem);
+				}
+				.more {
+					color: #333;
+					font-size: 1rem;
+					@include Position($bottom: 2.6rem, $right: 1.7rem);
+					@include Bold;
+				}
+			}
+		}
+		
+	}
+
+	#section-5 {
+		background-color: #fff;
+		padding: 5rem 0;
+		.ban_main {
+			margin: 0 1rem;
+			p {
+				margin-top: 1rem;
+				letter-spacing: -.03rem;
+				font-size: 1rem;
+				line-height: 1.7;
+				text-align: center;
+				span {
+					display: block;
+				}
+			}
+		}
+
+	}
+
+
+}
+
+

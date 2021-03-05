@@ -1,0 +1,696 @@
+.btn-group{
+	@include Align-middle;
+	.btn{
+		margin: 0 .4rem;
+	}
+}
+
+.btn{
+	//@include Vertical-inline;
+	@include Inline-align-middle;
+	vertical-align: middle;
+	height: 4.7rem;
+	padding: 0 1rem;
+	box-sizing: border-box;
+	line-height: 1;
+	color:#2B2B2B;
+	&.radius {
+		border-radius: 1rem;
+	}
+	&-default{
+		width: 100%;
+		color: #fff;
+		border-radius: 1rem;
+		font-size: 1.4rem;
+		border: 1px solid #B4B8BF;
+		background-color: #B4B8BF;
+		pointer-events: none;
+		@include Bold;
+		&.noRadius {
+			border-radius: 0;
+		}
+		&.active {
+			border: 1px solid #F04040;
+			background-color: #F04040;
+			pointer-events: auto;
+		}
+		&.eventsAuto {
+			pointer-events: auto;
+		}
+		&.black {
+			border: 1px solid #2B2B2B;
+			background-color: #2B2B2B;
+			pointer-events: auto;
+		}
+		&.gray {
+			border: 1px solid #EFF2F7;
+			background-color: #EFF2F7;
+			color: #2B2B2B;
+			pointer-events: auto;
+		}
+		&.grayFill {
+			border: 1px solid #EBEBEB;
+			background-color: #FAFAFA;
+			color: #2B2B2B;
+			pointer-events: auto;
+		}
+	}
+	&-red {
+		width: 100%;
+		color: #fff;
+		border-radius: 1rem;
+		font-size: 1.4rem;
+		border: 1px solid #F04040;
+		background-color: #F04040;
+		@include Bold;
+		@include Align-middle;
+		border-radius: 0;
+	}
+	&-column {
+		@include Align-middle-column;
+		font-size: 1.4rem;
+		span {
+			font-size: 1rem;
+			@include Normal;
+			margin-bottom: .4rem;
+		}
+	}
+	&-white {
+		width: 100%;
+		color: #F04040;
+		border-radius: 1rem;
+		font-size: 1.4rem;
+		border: 1px solid #fff;
+		background-color: #fff;
+		@include Bold;
+		@include Align-middle;
+		border-radius: 0;
+		&.line {
+			border-radius: 1rem;
+			border-color: #EBEBEB;
+		}
+		&.grayBorder {
+			border-radius: 1rem;
+			color: #2B2B2B !important;
+			border-color: #2B2B2B !important;
+		}
+	}
+	&-gray {
+		width: 100%;
+		color: #fff;
+		border-radius: 1rem;
+		font-size: 1.4rem;
+		border: 1px solid #B4B8BF;
+		background-color: #B4B8BF;
+		@include Bold;
+		@include Align-middle;
+		border-radius: 0;
+	}
+	&-orange {
+		width: 100%;
+		color: #F04040;
+		border-radius: 1rem;
+		font-size: 1.4rem;
+		border: 1px solid #FDE4E4;
+		background-color: #FDE4E4;
+		@include Bold;
+		@include Align-middle;
+		border-radius: 0;
+	}
+	&-blue {
+		width: 100%;
+		color: #fff;
+		border-radius: 1rem;
+		font-size: 1.4rem;
+		border: 1px solid #20BBC4;
+		background-color: #20BBC4;
+		@include Bold;
+		@include Align-middle;
+		border-radius: 0;
+	}
+	&-gray2 {
+		width: 100%;
+		color: #2B2B2B;
+		border-radius: 1rem;
+		font-size: 1.4rem;
+		border: 1px solid #EBEBEB;
+		background-color: #EFF2F7;
+		@include Align-middle;
+		border-radius: 0;
+	}
+	&-simple{
+		border: 1px solid #EBEBEB;
+		height: 2.8rem;
+		border-radius: 1.5rem;
+		font-size:1.1rem;
+		padding:0 .9rem;
+		background-color: #fff;
+		&.active{
+			color: #0074b2;
+			border-color: #0074b2;
+		}
+		&.black {
+			color: #fff;
+			border-color: #2B2B2B;
+			background-color: #2B2B2B;
+		}
+		&.gray {
+			border-color: #EBEBEB;
+			background-color: #FAFAFA;
+		}
+		&.mid {
+			height: 3.2rem;
+			padding: 0 1.7rem;
+		}
+		&.off {
+			color:#c1c1c1;
+			background-color: #fafafa;
+			cursor: default;
+		}
+	}
+	&-toggle {
+		width: 1.7rem;
+		height: 1.7rem;
+		position: relative;
+		cursor: pointer;
+		&:after {
+			display: block;
+			content: '';
+			@include Position($top: 50%, $right: 50%);
+			@include Background($sprite:'ico-arrow-down', $size:100% auto, $position:center center);
+			width: .9rem;
+			height: .9rem;
+			margin: -.45rem -.45rem 0 0;
+			transition: transform .5s;
+			transform: rotate(0deg);
+		}
+		&.gray:after {
+			@include Background($sprite:'ico-arrow-down2', $size:100% auto, $position:center center);
+		}
+		&.active:after {
+			transform: rotate(180deg);
+		}
+	}
+	&-pannel {
+		@include Align-middle;
+		width: 2.6rem;
+		height: 2.6rem;
+		padding:0;
+		position: relative;
+		cursor: pointer;
+	}
+	&-link{
+		@include Vertical-inline;
+		box-sizing: border-box;
+		line-height: 1;
+		color:#2B2B2B;
+		border-bottom: 1px solid #2B2B2B;
+		font-size: 1.1rem;
+		padding-bottom: .1rem;
+	}
+	&-link-view{
+		display: inline-flex;
+		align-items: center;
+		box-sizing: border-box;
+		line-height: 1;
+		color:#2B2B2B;
+		font-size: 1.1rem;
+		&:after {
+			display: block;
+			content: '';
+			@include Background($sprite:'ico-arrow-down', $size:100% auto, $position:center center);
+			width: .7rem;
+			height: .7rem;
+			transform: rotate(270deg);
+			margin-left: .2rem;
+		}
+
+	}
+	&-share{
+		@include Align-middle;
+		width: 3.4rem;
+		height: 3.4rem;
+		background-color: #EFF2F7;
+		border-radius: 100%;
+		&.ty2 {
+			background-color: #fff;
+			box-shadow: 0 0px 10px rgba(0, 0, 0, 0.05);
+		}
+	}
+	&-goTop {
+		@include Background($sprite:'ico-goTop', $size:100% auto, $position:center center);
+		width: 4.7rem;
+		height: 4.7rem;
+		@include Hide_txt;
+	}
+	&-goWrite {
+		@include Background($sprite:'ico-goWrite', $size:100% auto, $position:center center);
+		width: 4.7rem;
+		height: 4.7rem;
+		@include Hide_txt;
+	}
+	&-goTalk {
+		@include Background($sprite:'ico-goTalk', $size:100% auto, $position:center center);
+		width: 4.7rem;
+		height: 4.7rem;
+		@include Hide_txt;
+	}
+	&-fixedRight03 {
+		background-color: #F04040;
+		border-radius: 100%;
+		@include Align-middle;
+		width: 5.5rem;
+		height: 5.5rem;
+		padding:0;
+		position: relative;
+		color:#fff;
+		span {
+			margin-top:.4rem;
+			display: block;
+		}
+	}
+	&-paging-before {
+		@include Hide_txt;
+		@include Align-middle;
+		@include Background($sprite:'ico-paging-before', $size:.9rem, $position:center center);
+		width: 2.2rem;
+		height: 2.8rem;
+		box-sizing: border-box;
+		border: 1px solid #EBEBEB;
+		background-color: #fff;
+		border-radius: .5rem;
+	}
+	&-paging-prev {
+		@include Hide_txt;
+		@include Align-middle;
+		@include Background($sprite:'ico-paging-prev', $size:.5rem, $position:center center);
+		width: 2.2rem;
+		height: 2.8rem;
+		box-sizing: border-box;
+		border: 1px solid #EBEBEB;
+		background-color: #fff;
+		border-radius: .5rem;
+	}
+	&-paging-next {
+		@include Hide_txt;
+		@include Align-middle;
+		@include Background($sprite:'ico-paging-next', $size:.5rem, $position:center center);
+		width: 2.2rem;
+		height: 2.8rem;
+		box-sizing: border-box;
+		border: 1px solid #EBEBEB;
+		background-color: #fff;
+		border-radius: .5rem;
+	}
+	&-paging-after {
+		@include Hide_txt;
+		@include Align-middle;
+		@include Background($sprite:'ico-paging-after', $size:.9rem, $position:center center);
+		width: 2.2rem;
+		height: 2.8rem;
+		box-sizing: border-box;
+		border: 1px solid #EBEBEB;
+		background-color: #fff;
+		border-radius: .5rem;
+	}
+	&-comment {
+		border: 1px solid #EBEBEB;
+		@include Hide_txt;
+		@include Background($sprite:'ico-comment-off', $size:1.6rem, $position:center center);
+		background-color: #fff;
+		border-radius: 1rem;
+		width: 4.5rem;
+		height: 4.1rem;
+		flex:none;
+		&.active {
+			@include Background($sprite:'ico-comment-on', $size:1.6rem, $position:center center);
+			background-color: #F04040;
+			border-color: #F04040;
+		}
+	}
+	&-small{
+		border: 1px solid #EBEBEB;
+		background-color: #fff;
+		border-radius: 1rem;
+		padding: 0 .8rem;
+		height: 2.1rem;
+		box-sizing: border-box;
+		@include Align-middle;
+		&.active {
+			background-color: #4054F0;
+			border-color: #4054F0;
+			color: #fff;
+		}
+		> .icon {
+			margin-right:.3rem;
+		}
+	}
+	&-anchor{
+		border: 1px solid #EBEBEB;
+		background-color: #FAFAFA;
+		border-radius: 1rem;
+		padding: 0 .8rem;
+		height: 2.8rem;
+		font-size:1.1rem;
+		box-sizing: border-box;
+		@include Align-middle;
+	}
+	&-middle {
+		border: 1px solid #EBEBEB;
+		background-color: #fff;
+		border-radius: 1.5rem;
+		padding: 0 1.7rem;
+		height: 3.4rem;
+		font-size:1.1rem;
+		box-sizing: border-box;
+		@include Align-middle;
+		> i {
+			margin-left:.4rem;
+		}
+	}
+	&-layer {
+		width: 2rem;
+		height: 2rem;
+		@include Align-middle-right;
+	}
+	&-inputReset {
+		@include Background($sprite:'ico-input-reset', $size:100% auto, $position:center center);
+		width: 2rem;
+		height: 2rem;
+	}
+	&-customer {
+		width: 100%;
+		height: 4.1rem;
+		@include Bold;
+		border:1px solid #EBEBEB;
+		background-color: #fff;
+		border-radius: 1rem;
+		i {
+			margin-left:.4rem;
+		}
+		&.gray {
+			background-color: #FAFAFA;
+			em {
+				margin-right:.4rem;
+			}
+		}
+		&.red {
+			background-color: #F04040;
+			border-color: #F04040;
+			color: #fff;
+			flex-flow: column;
+			span {
+				font-size: .9rem;
+				margin-bottom: .4rem;
+			}
+		}
+	}
+	&-linkGo {
+		display: inline-flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		height: 4.1rem;
+		border:1px solid #EBEBEB;
+		background-color: #fff;
+		border-radius: 1rem;
+		padding:0 1.4rem;
+	}
+	&-estimate-detail {
+		@include Background($sprite:'ico-estimate-detail', $size:100% auto, $position:center center);
+		@include Hide_txt;
+		width: 3.4rem;
+		height: 3.4rem;
+		&.off {
+			@include Background($sprite:'ico-estimate-detail-off', $size:100% auto, $position:center center);
+		}
+	}
+	&-estimate-price {
+		@include Background($sprite:'ico-estimate-price', $size:100% auto, $position:center center);
+		@include Hide_txt;
+		width: 3.4rem;
+		height: 3.4rem;
+		&.off {
+			@include Background($sprite:'ico-estimate-price-off', $size:100% auto, $position:center center);
+		}
+	}
+	&-text {
+		@include Align-middle-left;
+		font-size: 1rem;
+		i {margin-right: .2rem;}
+	}
+	&-compare-delete {
+		@include Background($sprite:'ico-compare-delete', $size:100% auto, $position:center center);
+		@include Hide_txt;
+		width: 2.4rem;
+		height: 2.4rem;
+	}
+	&-modified{
+		font:0/0 a !important;
+		@include Background($sprite:'ico-modified', $size:.3rem,  $position:center center);
+		border-radius: 100%;
+		width: 1.3rem;
+		height: 1.6rem;
+		background-color:transparent;
+	}
+	&-more {
+		width: 100%;
+		background-color: #fff;
+		border-radius: 1rem;
+		height: 4.1rem;
+		@include Align-middle;
+		@include Bold;
+		&.line {
+			border:1px solid #EBEBEB;
+		}
+	}
+
+}
+
+.item-add-btns {
+	@include Align-middle;
+	position: relative;
+	> button {
+		position: relative;
+		z-index: 1;
+	}
+	&:after{
+		display:block;
+		content: '';
+		width: 100%;
+		height: 1px;
+		background-color: #EBEBEB;
+		@include Position($top: 50%, $left: 0);
+		margin-top:-.5px;
+	}
+}
+.item-remove-btns {
+	@include Align-middle;
+	position: relative;
+	> button {
+		position: relative;
+		z-index: 1;
+	}
+	&:after{
+		display:block;
+		content: '';
+		width: 100%;
+		height: 1px;
+		background-color: #EBEBEB;
+		@include Position($top: 50%, $left: 0);
+		margin-top:-.5px;
+	}
+}
+
+a.btn {
+	@include Inline-align-middle;
+	vertical-align: middle;
+}
+
+.toggle-wrapper {
+	position: relative;
+	height: 16px;
+	width: 34px;
+	@include Vertical-inline;
+	.toggle {
+		position: relative;
+		display: inline-block;
+	}
+	input {
+		height: 16px;
+		left: 0;
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		width: 20px;
+	}
+	.normal label {
+		background: #F04040;
+	}
+	input:checked + label:before {
+		left: 14px;
+		border-color:#F04040;
+	}
+	input:checked + label {
+		background: #F04040;
+	}
+	.normal label:before {
+		content: '';
+        position: absolute;
+		border: none;
+		width: 20px;
+		height: 20px;
+		background: #fff;
+		transform: rotate(-25deg);
+	}
+	.normal label:after {
+		content: '';
+        position: absolute;
+		background: transparent;
+		height: 100%;
+		border-radius: 30px;
+		top: 0px;
+		width: 100%;
+		left: 0px;
+		height: 16px;
+		z-index: 0;
+	}
+	
+	label.toggle-item {
+		width: 34px;
+		background:#B4B8BF;
+		height: 16px;
+		display: inline-block;
+		border-radius: 50px;
+		position: relative;
+		transition: all .3s ease;
+		transform-origin: 20% center;
+		cursor: pointer;
+	}
+	label.toggle-item:before {
+		content: '';
+        position: absolute;
+		display: block;
+		transition: all .2s ease;
+		width: 20px;
+		height: 20px;
+		top: -2px;
+		left: 0px;
+		border-radius: 100%;
+		transition: .3s ease;
+		border:1px solid #B4B8BF;
+		box-sizing: border-box;
+		//box-shadow: 0 1px 5px rgba(96, 97, 112, 0.3);
+	}
+
+}
+
+//토글 버튼 스타일
+.common-toggle-list {
+	border-top: 1px solid #EBEBEB;
+	> li {
+		border-bottom: 1px solid #EBEBEB;
+	}
+	.common-toggle-btn {
+		.common-toggle-tit {
+			position: relative;
+			@include BreakWord;
+			padding: 1.4rem 1.9rem 1.4rem 0;
+			line-height: 1.4;
+			display: block;
+			a {
+				line-height: 1.4;
+				display: block;
+				@include BreakWord;
+			}
+		}
+		.btn-toggle {
+			@include Position($top: 1.25rem, $right: 0);
+			margin-left:1.4rem;
+		}
+		&.active {
+			.common-toggle-tit {
+				@include Bold;
+			}
+			.btn-toggle:after {
+				transform: rotate(180deg);
+			}
+		}
+		
+	}
+	.common-toggle-cont {
+		display: none;
+		border-top: 1px solid #EBEBEB;
+		background-color: #FAFAFA;
+		padding: 1.4rem;
+		.common-toggle-txt {
+			line-height: 1.4;
+			@include BreakWord;
+			.toggle-table {
+				table {
+					border-top: 1px solid #EBEBEB;
+					
+					th {
+						border-right: 1px solid #EBEBEB;
+						text-align: center;
+						vertical-align: middle;
+						background-color: #EFF2F7;
+						font-size: 1rem;
+						padding: 1.3rem .4rem;
+						line-height: 1.4;
+						@include Bold;
+						&:last-child {
+							border-right: 0;
+						}
+					}
+					td{
+						border-right: 1px solid #EBEBEB;
+						text-align: center;
+						vertical-align: top;
+						font-size: 1rem;
+						padding: 1.3rem .4rem;
+						line-height: 1.4;
+						&:last-child {
+							border-right: 0;
+						}
+						img {
+							width: auto;
+							max-width: 100%;
+						}
+					}
+					tbody {
+						tr {
+							&:nth-child(even){
+								background-color: #FAFAFA;
+							}
+						}
+					}
+				}
+				&.fixed {
+					overflow-x: auto;
+					overflow-y: hidden;
+					table {
+						width: 50rem;
+						table-layout:fixed
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.swiper-button-prev {
+	@include Hide_txt;
+	@include Background($sprite:'ico-slide-prev', $size:.9rem, $position:center center);
+	width: 3rem;
+	height: 3rem;
+	z-index: 2;
+}
+.swiper-button-next {
+	@include Hide_txt;
+	@include Background($sprite:'ico-slide-next', $size:.9rem, $position:center center);
+	width: 3rem;
+	height: 3rem;
+	z-index: 2;
+}

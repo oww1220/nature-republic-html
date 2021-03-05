@@ -1,0 +1,426 @@
+.catharsis-wrap {
+    background-color: #EFF2F7;
+    padding-bottom: 8rem;
+
+    .section-list {
+
+        .catharsis-list-top{
+            background-color: #DBE1EA;
+            border-radius: 1.5rem;
+            padding: 2.1rem 1.7rem 2.4rem;
+            margin-top: 1.5rem;
+            .catharsis-top-txt {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                margin-bottom: -0.2rem;
+                strong {
+                    margin-left: 1rem;
+                    margin-top: .5rem;
+                    font-size: 1.7rem;
+                    @include Bold;
+                    span{
+                        font-size: 1.2rem;
+                        display: block;
+                        @include Normal;
+                        margin-bottom: .5rem;
+                    }
+                }
+                &:before {
+                    display: block;
+                    content: '';
+                    width: 7rem;
+                    height: 6rem;
+                    @include Background($sprite:'bg-shin', $size:100% auto, $position:center center, $path:'bgs');
+                }
+            }
+            
+            .catharsis-top-btn {
+                position: relative;
+                z-index: 1;
+                .btn {
+                    height: 4.1rem;
+                    font-size: 1.2rem;
+                }
+            }
+            .catharsis-top-info {
+                position: relative;
+                padding:1.5rem 0rem 1.8rem;
+                &:after{
+                    display: block;
+                    content:"";
+                    border-top:1px solid #000;
+                    opacity:0.1;
+                    @include Position($position:absolute, $top: 0, $left: 0);
+                    width:100%;
+                }
+                & > ul.list-type-col1{
+                    width: 100%;
+                    margin:0;
+                    & > li{
+                        position: relative;
+                        line-height: 1.4;
+                        font-size: 0;
+                        & + li {
+                            margin-top:.4rem;
+                        }
+                        & > span{
+                            padding-left:.6rem;
+                            font-size: 1.1rem;
+                            @include Vertical-inline;
+                            margin-right: .4rem;
+                            line-height: 1.4;
+                        }
+                        & > strong{
+                            @include Bold;
+                            @include Vertical-inline;
+                            font-size: 1.1rem;
+                            line-height: 1.4;
+                        }
+                        button {
+                            @include Vertical-inline;
+                            margin-left: .4rem;
+                        }
+                        &:after{
+                            display:block;
+                            content:"";
+                            @include Background($sprite:'ico-circle', $size:100% auto, $position:center center);
+                            width: 2px;
+                            height: 2px;
+                            @include Position($position:absolute, $top: 50%, $left: 0);
+                            transform: translateY(-50%);
+                            border-radius: 50%;
+                        }
+                        &.noBg {
+                            &:after{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                & > ul.list-type-col2{
+                    width: 100%;
+                    margin:0;
+                    & > li{
+                        position: relative;
+                        font-size: 0;
+                        margin:.2rem 0;
+                        & > span{
+                            padding-left:.6rem;
+                            font-size: 1.1rem;
+                            @include Vertical-inline;
+                            margin-right: .4rem;
+                            line-height: 1.4;
+                        }
+                        & > strong{
+                            @include Bold;
+                            font-size: 1.1rem;
+                            @include Vertical-inline;
+                            line-height: 1.4;
+                        }
+                        &:after{
+                            display:block;
+                            content:"";
+                            @include Background($sprite:'ico-circle', $size:100% auto, $position:center center);
+                            width: 2px;
+                            height: 2px;
+                            @include Position($position:absolute, $top: 50%, $left: 0);
+                            transform: translateY(-50%);
+                            border-radius: 50%;
+                        }
+                        &.full {
+                            width: 100%;
+                        }
+                        &.noBg {
+                            &:after{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            &-review{
+                .catharsis-top-txt{
+                    padding-bottom:1.5rem;
+                    .lpoint{
+                        //margin-top:.4rem;
+                        margin-right:.7rem;
+                    }
+                    strong{
+                        em{
+                            position: relative;
+                            color:#29B2DB;
+                            button{
+                                @include Position($position:absolute, $top: 50%, $right: -1.7rem);
+                                transform: translateY(-50%);
+                            }
+                        }
+                        span{
+                            color:#2B2B2B;
+                        }
+                    }
+                    &:before{
+                        display:none;
+                    }
+                }
+            }
+        }
+        .catharsis-list{
+            /*
+            &-text-review{
+                .text-cont {
+                    padding: .9rem 1.7rem;
+                }
+                .text-cont-in{
+                    .img {
+                        position: relative; 
+                        border-radius: 1rem;
+                        overflow: hidden;
+                        background-color: #fff;  
+                    }
+                    .text {
+                        white-space: normal;
+                        margin-top:1.3rem;
+                        strong {
+                            @include Ellipsis($lines:3);
+                            line-height: 1.4;
+                            word-break: keep-all;
+                        }
+                        span {
+                            display: block;
+                            @include Bold;
+                            margin-top: 1.1rem;
+                        }
+                    }
+                    .thumb { 
+                        margin-top: .9rem;
+                        @include Align-between;
+                        .info{
+                            color: #999;
+                            margin-left:1rem;
+                        }
+                        .days {color: #999;}
+                    }
+                    .star {
+                        margin-top: 1rem;
+                        font-size: 0;
+                        i {
+                            margin-top: 0;
+                            margin-left: .4rem;
+                        }
+                        i:first-child{
+                            margin-left:0;
+                        }
+                    }
+                }
+            }
+            */
+            &-tv{
+                background-color: #fff;
+                border-radius: 1.5rem;
+                padding: 2.6rem 0;
+                margin-top:2.6rem;
+                & + .catharsis-list-tv {
+                    margin-top:.9rem;
+                }
+                .unit-normal {
+                    margin: 0 1.7rem;
+                    //@at-root:0;
+                    + .unit-normal {
+                        margin-top:.9rem;
+                    }
+                    .text{
+                        & > strong{
+                            & > b{
+                                color:#999;
+                            }
+                        }
+                    }
+                    .video02{
+                        @include Position($top: 50%, $left: 50%);
+                        transform: translate(-50%,-50%);
+                        z-index:2;
+                    }
+                }
+                .unit-pro{
+                    //margin-bottom:.9rem;
+                    ul {
+                        @include NoscrollBar;
+                        @include Inline-scrolling;
+                        margin-top: 1.7rem;
+                        padding-left: 1.7rem;
+                        li {
+                            display: inline-block;
+                            margin-right:1.5rem;
+                            vertical-align: middle;
+                            width: 23.5rem;
+                            a {
+                                display: block;
+                            }
+                            .inner {
+                                @include Align-middle-left;
+                            }
+                            .img {
+                                position: relative; 
+                                border-radius: 1rem;
+                                overflow: hidden;
+                                background-color: #EEF1F6;
+                                @include Align-middle;
+                                display: inline-flex;
+                                width: 10.2rem;
+                                height: 6.1rem;
+                                flex:none;
+                                margin-right: 1.3rem;
+                                img{
+                                    //mix-blend-mode: multiply;
+                                }  
+                            }
+                            .text {
+                                white-space: normal;
+                                height:100%;
+                                strong {
+                                    display: block;
+                                    line-height: 1.3;
+                                    word-break: keep-all;
+                                }
+                                span {
+                                    display: block;
+                                    @include Bold;
+                                    margin-top: .4rem;
+                                    line-height: 1.3;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .catharsis-tv-view{
+            position: relative;
+            padding-top:1rem;
+            .video02{
+                @include Position($top: 50%, $left: 50%);
+                transform: translate(-50%,-100%);
+                z-index: 1;
+            }
+            .cover {
+                @include CoverImg($radius:0);
+            }
+            .text {
+                @include Position($bottom: 0, $left: 0);
+                padding:0 2.6rem 2.6rem;
+                width: 100%;
+                box-sizing: border-box;
+                > strong {
+                    display: block;
+                    color:#fff;
+                    @include Bold;
+                    line-height: 1.4;
+                    font-size: 1.7rem;
+                }
+                .hash {
+                    font-size: 0;
+                    margin-top: .4rem;
+                    > span {
+                        @include Vertical-inline;
+                        color:#fff;
+                        line-height: 1.4;
+                        font-size: 1.2rem;
+                        margin: 0 .6rem 0 0;
+                    }
+                }
+            }
+        }
+        .catharsis-tv-bn{
+            margin-top:1.2rem;
+        }
+
+    }
+    .section-detail{
+        .text-detail-cont-tv{
+            position: relative;
+            > strong {
+                padding-right: 1.5rem;
+            }
+            .detail-img{
+                margin:0 0 1.7rem;
+                position: relative;
+                width: 100%;
+                height: 0;
+                padding-bottom: 56.25%;
+                iframe {
+                    @include Position($top: 0, $left: 0);
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .detail-cont-txt{
+                border-top:0 none;
+                @include EditorStyle;
+            }
+            .unit-pro{
+                margin-bottom:2.6rem;
+                ul {
+                    @include NoscrollBar;
+                    @include Inline-scrolling;
+                    margin-top: 1.7rem;
+                    li {
+                        display: block;
+                        width: 100%;
+                        margin-top:1.2rem;
+                        a {
+                            display: block;
+                        }
+                        .inner {
+                            @include Align-middle-left;
+                        }
+                        .img {
+                            position: relative; 
+                            border-radius: 1rem;
+                            overflow: hidden;
+                            background-color: #EEF1F6;
+                            @include Align-middle;
+                            display: inline-flex;
+                            width: 10.2rem;
+                            height: 6.1rem;
+                            margin-right: 1.3rem;
+                            flex:none;
+                            img{
+                                //mix-blend-mode: multiply;
+                            }
+                        }
+                        .text {
+                            white-space: normal;
+                            strong {
+                                display: block;
+                                line-height: 1.3;
+                                word-break: keep-all;
+                            }
+                            span {
+                                display: block;
+                                @include Bold;
+                                line-height: 1.3;
+                                margin-top: .4rem;
+                            }
+                        }
+                    }
+                    & > li:first-child{
+                        margin-top:0;
+                    }
+                }
+            }
+            .btn-modified {
+                @include Position($top: 0, $right: 1.7rem);
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
