@@ -94,6 +94,35 @@
         
     }
 
+    .col03 {
+        .section-col03 {
+            ul {
+                @include Align-box;
+                li {
+                    position: relative;
+                    width: 320px;
+                    overflow: hidden;
+                    .hover {
+                        display: none;
+                        @include Position($top:0, $left:0);
+                    }
+                    a:hover {
+                        .hover {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .col4 {
+        .section-col4 {
+            max-width: 1980px;
+            margin: 0 auto;
+        }
+    }
+
     .col5 {
         margin-bottom: 110px;
         ul {
